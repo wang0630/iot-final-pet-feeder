@@ -1,0 +1,1951 @@
+[
+    {
+        "id": "57f99f135c421ab9",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3f46a9b0265bbf5f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b4d6f4125bb24ca3",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "6a39884d8f82f857",
+        "type": "subflow",
+        "name": "Subflow 2",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": []
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "hostName",
+                "type": "str",
+                "value": "http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1"
+            },
+            {
+                "name": "panelId",
+                "type": "str",
+                "value": "6"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "042fa89bb2314d7a",
+        "type": "subflow",
+        "name": "subflow for live image",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "046650c8571a6d62"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "hostName",
+                "type": "str",
+                "value": "http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1"
+            },
+            {
+                "name": "panelId",
+                "type": "str",
+                "value": "6"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "99a9613879a8be68",
+        "type": "subflow",
+        "name": "subflow for weight",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": []
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "hostName",
+                "type": "str",
+                "value": "http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1"
+            },
+            {
+                "name": "panelId",
+                "type": "str",
+                "value": "6"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "41f039c37483cd78",
+        "type": "subflow",
+        "name": "Subflow 2 (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "96c7eb0681d115ce"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "hostName",
+                "type": "str",
+                "value": "http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1"
+            },
+            {
+                "name": "panelId",
+                "type": "str",
+                "value": "6"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "20533df8417ccf59",
+        "type": "subflow",
+        "name": "Subflow for weight",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "06a0e5b7f721b391"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [
+            {
+                "name": "hostName",
+                "type": "str",
+                "value": "http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1"
+            },
+            {
+                "name": "panelId",
+                "type": "str",
+                "value": "6"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d56d1dd0e6b3bb36",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#4b2e83",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#4b2e83",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4b2e83",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6b42bc",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b2e83",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Lucida Sans Unicode,Lucida Grande,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "IOT final pet feeder",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "279513537bf39877",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 5,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "e1e53a4ec960152f",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8f8c4a0dd39a6975",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dee9d49e494615ee",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2ff577a1e414b29a",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 34,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "62fbef774d5fd75b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2023edad9ad0b4ec",
+        "type": "ui_group",
+        "name": "petFeeder",
+        "tab": "62fbef774d5fd75b",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "123aefc84611ed59",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 3,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "98d2a473c3d093e5",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "9e54cdb72c39d4e0",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 9,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "cc0169871a37d91e",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "83dbd89b15f28862",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "6193935b51251173",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 14,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "d06d7ef295dafc2c",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 16,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f7a3b6d7f3bec39d",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 20,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "407d6df59a6b0f7d",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 21,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f733818f6b807a6f",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 24,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2352d27e.94005e",
+        "type": "ui_button",
+        "z": "6a39884d8f82f857",
+        "name": "",
+        "group": "",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "12 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "12",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "de8150aa.71733"
+            ]
+        ]
+    },
+    {
+        "id": "5bf0d866.9868c",
+        "type": "ui_button",
+        "z": "6a39884d8f82f857",
+        "name": "",
+        "group": "",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "1 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "de8150aa.71733"
+            ]
+        ]
+    },
+    {
+        "id": "de8150aa.71733",
+        "type": "function",
+        "z": "6a39884d8f82f857",
+        "name": "SetTimeRange",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\n\n\nmsg.fromdate = \"now-\" + msg.payload +\"h\";\nmsg.enddate = \"now\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "aeaaadf4.7dcb"
+            ]
+        ]
+    },
+    {
+        "id": "383e32a3.06bd66",
+        "type": "function",
+        "z": "6a39884d8f82f857",
+        "name": "SetTimeYesterday",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\nvar today0h = d.setHours(0,0,0,0); //Timestamp midnight\n\nmsg.fromdate = today0h - p_1d\nmsg.enddate = today0h\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "aeaaadf4.7dcb"
+            ]
+        ]
+    },
+    {
+        "id": "aeaaadf4.7dcb",
+        "type": "function",
+        "z": "6a39884d8f82f857",
+        "name": "Build template for frequency",
+        "func": "msg.payload = `${env.get('hostName')}&from=1646357224662&to=1646358124662&panelId=${env.get('panelId')}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "fe5aa74b8018aeef"
+            ]
+        ]
+    },
+    {
+        "id": "a4654193.3b49e8",
+        "type": "function",
+        "z": "6a39884d8f82f857",
+        "name": "SetTimeTodaySofar",
+        "func": "msg.fromdate = \"now/d\";\nmsg.enddate = \"now\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "aeaaadf4.7dcb"
+            ]
+        ]
+    },
+    {
+        "id": "fe5aa74b8018aeef",
+        "type": "ui_template",
+        "z": "6a39884d8f82f857",
+        "group": "",
+        "name": "Frequency",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"frequency\" width=\"600px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('frequency');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "046650c8571a6d62",
+        "type": "ui_button",
+        "z": "042fa89bb2314d7a",
+        "name": "",
+        "group": "",
+        "order": 20,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "24 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "24",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "fb3bcc1387a3e23b"
+            ]
+        ]
+    },
+    {
+        "id": "247628d2d65b9987",
+        "type": "ui_button",
+        "z": "042fa89bb2314d7a",
+        "name": "",
+        "group": "",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "12 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "12",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "fb3bcc1387a3e23b"
+            ]
+        ]
+    },
+    {
+        "id": "b5a3912921381be1",
+        "type": "ui_button",
+        "z": "042fa89bb2314d7a",
+        "name": "",
+        "group": "",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "1 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "fb3bcc1387a3e23b"
+            ]
+        ]
+    },
+    {
+        "id": "fb3bcc1387a3e23b",
+        "type": "function",
+        "z": "042fa89bb2314d7a",
+        "name": "SetTimeRange",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\n\n\nmsg.fromdate = \"now-\" + msg.payload +\"h\";\nmsg.enddate = \"now\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "b01dea6dc0f9df55"
+            ]
+        ]
+    },
+    {
+        "id": "f421423c9d68b0da",
+        "type": "function",
+        "z": "042fa89bb2314d7a",
+        "name": "SetTimeYesterday",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\nvar today0h = d.setHours(0,0,0,0); //Timestamp midnight\n\nmsg.fromdate = today0h - p_1d\nmsg.enddate = today0h\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "b01dea6dc0f9df55"
+            ]
+        ]
+    },
+    {
+        "id": "b01dea6dc0f9df55",
+        "type": "function",
+        "z": "042fa89bb2314d7a",
+        "name": "Build template for live image",
+        "func": "msg.payload = `${env.get('hostName')}&from=1646357224662&to=1646358124662&panelId=${env.get('panelId')}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "38ed56a1cc6f6422"
+            ]
+        ]
+    },
+    {
+        "id": "0f2542ebec8fa096",
+        "type": "function",
+        "z": "042fa89bb2314d7a",
+        "name": "SetTimeTodaySofar",
+        "func": "msg.fromdate = \"now/d\";\nmsg.enddate = \"now\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "b01dea6dc0f9df55"
+            ]
+        ]
+    },
+    {
+        "id": "38ed56a1cc6f6422",
+        "type": "ui_template",
+        "z": "042fa89bb2314d7a",
+        "group": "",
+        "name": "live image",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"live-image\" width=\"600px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('live-image');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 980,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2831d21db44c053",
+        "type": "ui_button",
+        "z": "99a9613879a8be68",
+        "name": "",
+        "group": "",
+        "order": 16,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "12 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "12",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "eb7b33a519bb68f5"
+            ]
+        ]
+    },
+    {
+        "id": "42ace7c132821a10",
+        "type": "ui_button",
+        "z": "99a9613879a8be68",
+        "name": "",
+        "group": "",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "1 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "eb7b33a519bb68f5"
+            ]
+        ]
+    },
+    {
+        "id": "eb7b33a519bb68f5",
+        "type": "function",
+        "z": "99a9613879a8be68",
+        "name": "SetTimeRange",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\n\n\nmsg.fromdate = \"now-\" + msg.payload +\"h\";\nmsg.enddate = \"now\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "66d9af2e3e14e412"
+            ]
+        ]
+    },
+    {
+        "id": "7e539950f526737f",
+        "type": "function",
+        "z": "99a9613879a8be68",
+        "name": "SetTimeYesterday",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\nvar today0h = d.setHours(0,0,0,0); //Timestamp midnight\n\nmsg.fromdate = today0h - p_1d\nmsg.enddate = today0h\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "66d9af2e3e14e412"
+            ]
+        ]
+    },
+    {
+        "id": "c30158d99dddcb58",
+        "type": "ui_button",
+        "z": "99a9613879a8be68",
+        "name": "",
+        "group": "",
+        "order": 26,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Yesterday",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "7e539950f526737f"
+            ]
+        ]
+    },
+    {
+        "id": "66d9af2e3e14e412",
+        "type": "function",
+        "z": "99a9613879a8be68",
+        "name": "Build template for live image",
+        "func": "msg.payload = `${env.get('hostName')}&from=1646357224662&to=1646358124662&panelId=${env.get('panelId')}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7945d0492d27cf37",
+        "type": "function",
+        "z": "99a9613879a8be68",
+        "name": "SetTimeTodaySofar",
+        "func": "msg.fromdate = \"now/d\";\nmsg.enddate = \"now\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "66d9af2e3e14e412"
+            ]
+        ]
+    },
+    {
+        "id": "33023ac6bee8b6ba",
+        "type": "ui_button",
+        "z": "99a9613879a8be68",
+        "name": "",
+        "group": "",
+        "order": 23,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Today",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "7945d0492d27cf37"
+            ]
+        ]
+    },
+    {
+        "id": "96c7eb0681d115ce",
+        "type": "ui_button",
+        "z": "41f039c37483cd78",
+        "name": "",
+        "group": "",
+        "order": 22,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "24 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "24",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "0043b867b17a9f98"
+            ]
+        ]
+    },
+    {
+        "id": "0043b867b17a9f98",
+        "type": "function",
+        "z": "41f039c37483cd78",
+        "name": "SetTimeRange",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\n\n\nmsg.fromdate = \"now-\" + msg.payload +\"h\";\nmsg.enddate = \"now\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "eff811f20c43957f"
+            ]
+        ]
+    },
+    {
+        "id": "bf56545d2632aada",
+        "type": "function",
+        "z": "41f039c37483cd78",
+        "name": "SetTimeYesterday",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\nvar today0h = d.setHours(0,0,0,0); //Timestamp midnight\n\nmsg.fromdate = today0h - p_1d\nmsg.enddate = today0h\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "eff811f20c43957f"
+            ]
+        ]
+    },
+    {
+        "id": "feabb0afd593d7ce",
+        "type": "ui_button",
+        "z": "41f039c37483cd78",
+        "name": "",
+        "group": "",
+        "order": 27,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Yesterday",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "bf56545d2632aada"
+            ]
+        ]
+    },
+    {
+        "id": "eff811f20c43957f",
+        "type": "function",
+        "z": "41f039c37483cd78",
+        "name": "Build template for weight",
+        "func": "msg.payload = `${env.get('hostName')}&from=1646357224662&to=1646358124662&panelId=${env.get('panelId')}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eafd637d2af1b2f5",
+        "type": "function",
+        "z": "41f039c37483cd78",
+        "name": "SetTimeTodaySofar",
+        "func": "msg.fromdate = \"now/d\";\nmsg.enddate = \"now\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "eff811f20c43957f"
+            ]
+        ]
+    },
+    {
+        "id": "0693bd63d9ffb463",
+        "type": "ui_button",
+        "z": "41f039c37483cd78",
+        "name": "",
+        "group": "",
+        "order": 32,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Today",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "eafd637d2af1b2f5"
+            ]
+        ]
+    },
+    {
+        "id": "06a0e5b7f721b391",
+        "type": "ui_button",
+        "z": "20533df8417ccf59",
+        "name": "",
+        "group": "",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "24 H",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "24",
+        "payloadType": "num",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "6326fad8d14001a4"
+            ]
+        ]
+    },
+    {
+        "id": "6326fad8d14001a4",
+        "type": "function",
+        "z": "20533df8417ccf59",
+        "name": "SetTimeRange",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\n\n\nmsg.fromdate = \"now-\" + msg.payload +\"h\";\nmsg.enddate = \"now\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "d10440ce818b502e"
+            ]
+        ]
+    },
+    {
+        "id": "785b9a03332c2154",
+        "type": "function",
+        "z": "20533df8417ccf59",
+        "name": "SetTimeYesterday",
+        "func": "var p_30d  = 1000*60*60*24*30 ; //30 Days\nvar p_7d  = 1000*60*60*24*7 ; //7 Days\nvar p_1d   =  1000*60*60*24 ; // 1 Day\nvar p_hr = 1000*60*60; //1 Hour\n\nvar d = new Date();\nvar current = d.getTime();\nvar today0h = d.setHours(0,0,0,0); //Timestamp midnight\n\nmsg.fromdate = today0h - p_1d\nmsg.enddate = today0h\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "d10440ce818b502e"
+            ]
+        ]
+    },
+    {
+        "id": "c5cb6ad532eb5020",
+        "type": "ui_button",
+        "z": "20533df8417ccf59",
+        "name": "",
+        "group": "",
+        "order": 28,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Yesterday",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "785b9a03332c2154"
+            ]
+        ]
+    },
+    {
+        "id": "d10440ce818b502e",
+        "type": "function",
+        "z": "20533df8417ccf59",
+        "name": "Build template for weight",
+        "func": "msg.payload = `${env.get('hostName')}&from=1646357224662&to=1646358124662&panelId=${env.get('panelId')}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "6e07c9a1d86d9b04"
+            ]
+        ]
+    },
+    {
+        "id": "4e23bb431ef169dd",
+        "type": "function",
+        "z": "20533df8417ccf59",
+        "name": "SetTimeTodaySofar",
+        "func": "msg.fromdate = \"now/d\";\nmsg.enddate = \"now\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "d10440ce818b502e"
+            ]
+        ]
+    },
+    {
+        "id": "547070a346dd71ea",
+        "type": "ui_button",
+        "z": "20533df8417ccf59",
+        "name": "",
+        "group": "",
+        "order": 33,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Today",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "yesterday",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "4e23bb431ef169dd"
+            ]
+        ]
+    },
+    {
+        "id": "6e07c9a1d86d9b04",
+        "type": "ui_template",
+        "z": "20533df8417ccf59",
+        "group": "",
+        "name": "Weight",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"weight\" width=\"600px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 970,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbc9cf74a5b7e195",
+        "type": "camerapi-takephoto",
+        "z": "57f99f135c421ab9",
+        "filemode": "1",
+        "filename": "lastest-image.jpg",
+        "filedefpath": "0",
+        "filepath": "/home/pi/Desktop/iot-final/",
+        "fileformat": "jpeg",
+        "resolution": "8",
+        "rotation": "0",
+        "fliph": "0",
+        "flipv": "0",
+        "brightness": "60",
+        "contrast": "0",
+        "sharpness": "0",
+        "quality": "80",
+        "imageeffect": "none",
+        "exposuremode": "auto",
+        "iso": "400",
+        "agcwait": "1.0",
+        "led": "1",
+        "awb": "auto",
+        "name": "Take photo",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "017aded9486035a1"
+            ]
+        ]
+    },
+    {
+        "id": "0d272d9cbd6ee2af",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Should a photo be taken?",
+        "func": "// Only take photoes when LED lightness > 100\nif (msg.payload <= 40) return;\n\n// Trigger to take a photo\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "fbc9cf74a5b7e195"
+            ]
+        ]
+    },
+    {
+        "id": "bad078c2c89e480b",
+        "type": "delay",
+        "z": "57f99f135c421ab9",
+        "name": "Rate limit for camera",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "0d272d9cbd6ee2af"
+            ]
+        ]
+    },
+    {
+        "id": "017aded9486035a1",
+        "type": "Save Blob",
+        "z": "57f99f135c421ab9",
+        "d": true,
+        "name": "Azure Save Blob Storage",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "f0d0e2701af57a62"
+            ]
+        ]
+    },
+    {
+        "id": "f0d0e2701af57a62",
+        "type": "Computer Vision",
+        "z": "57f99f135c421ab9",
+        "d": true,
+        "operation": "description",
+        "name": "",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "302115986449b3a8",
+        "type": "ui_template",
+        "z": "3f46a9b0265bbf5f",
+        "group": "2023edad9ad0b4ec",
+        "name": "Page Got Loaded",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function() {\n    (function(scope) {\n        scope.send({payload: \"loading\"}); // this gets sent when the view is opened in the browser\n    })(scope);\n})();\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "67131bae92eb4f91",
+                "bed837a1ccdfc2c9",
+                "7063725fed1df358"
+            ]
+        ]
+    },
+    {
+        "id": "67131bae92eb4f91",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Build template for the latest image",
+        "func": "msg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646357224662&to=1646358124662&panelId=6`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "467443b34c1293da"
+            ]
+        ]
+    },
+    {
+        "id": "bed837a1ccdfc2c9",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Build template for weight",
+        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=4`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "f5a79e975b627dc3"
+            ]
+        ]
+    },
+    {
+        "id": "467443b34c1293da",
+        "type": "ui_template",
+        "z": "3f46a9b0265bbf5f",
+        "group": "2023edad9ad0b4ec",
+        "name": " The latest image",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"live-image\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('live-image');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 800,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5a79e975b627dc3",
+        "type": "ui_template",
+        "z": "3f46a9b0265bbf5f",
+        "group": "2023edad9ad0b4ec",
+        "name": "Weight",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1050,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c772aefdce7f08",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Build template for frequency",
+        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=2`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 880,
+        "wires": [
+            [
+                "620361907f476cba"
+            ]
+        ]
+    },
+    {
+        "id": "620361907f476cba",
+        "type": "ui_template",
+        "z": "3f46a9b0265bbf5f",
+        "group": "2023edad9ad0b4ec",
+        "name": "Frequency",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"fre\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('fre');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1f6092b9badf98f",
+        "type": "ui_date_picker",
+        "z": "3f46a9b0265bbf5f",
+        "name": "From",
+        "label": "From",
+        "group": "2023edad9ad0b4ec",
+        "order": 6,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "fromDate",
+        "topicType": "str",
+        "className": "",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "3eab1337fac8bcb0"
+            ]
+        ]
+    },
+    {
+        "id": "2b6bb24b92fc7378",
+        "type": "ui_button",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Query for weight",
+        "group": "2023edad9ad0b4ec",
+        "order": 8,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "Query",
+        "tooltip": "Query",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "queryWeight",
+        "topicType": "str",
+        "x": 570,
+        "y": 600,
+        "wires": [
+            [
+                "3eab1337fac8bcb0"
+            ]
+        ]
+    },
+    {
+        "id": "d45bf7af44b088dd",
+        "type": "ui_numeric",
+        "z": "3f46a9b0265bbf5f",
+        "name": "From hour",
+        "label": "Hour",
+        "tooltip": "Select hour",
+        "group": "2023edad9ad0b4ec",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "wrap": true,
+        "passthru": true,
+        "topic": "fromHour",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "3eab1337fac8bcb0"
+            ]
+        ]
+    },
+    {
+        "id": "3eab1337fac8bcb0",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Create from and to date",
+        "func": "if (!msg.topic) return;\n\n// Set context\nflow.set(msg.topic, msg.payload);\n\n// If button query is fired, check if all the data exists\nif (msg.topic.startsWith('query')) {\n    // Check validity\n    const [fromDate, fromHour, toDate, toHour] = flow.get(['fromDate', 'fromHour', 'toDate', 'toHour']);\n    // Generate the timestamp\n    const from = fromDate + fromHour * 60 * 60 * 1000;\n    const to = toDate + toHour * 60 * 60 * 1000;\n    node.warn(toDate)\n    node.warn(Date.now());\n    // Can't go backward\n    if (from >= to) return;\n    // Can't predict\n    if (from > Date.now() || to > Date.now()) {\n        node.warn('hereeeee')\n        return;\n    }\n    \n    // Construct query\n    return { \n        payload: { from, to }\n    };\n}\n\nreturn;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('fromDate', null);\ncontext.set('fromHour', null);\ncontext.set('toDate', null);\ncontext.set('toHour', null);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 600,
+        "wires": [
+            [
+                "bed837a1ccdfc2c9"
+            ]
+        ]
+    },
+    {
+        "id": "c1df7c02cbd2292a",
+        "type": "catch",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Catch time related errors",
+        "scope": null,
+        "uncaught": false,
+        "x": 190,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79c5bd1a321679cc",
+        "type": "ui_date_picker",
+        "z": "3f46a9b0265bbf5f",
+        "name": "To",
+        "label": "To",
+        "group": "2023edad9ad0b4ec",
+        "order": 11,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "toDate",
+        "topicType": "str",
+        "className": "",
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "3eab1337fac8bcb0"
+            ]
+        ]
+    },
+    {
+        "id": "c9d4426e27a964aa",
+        "type": "ui_numeric",
+        "z": "3f46a9b0265bbf5f",
+        "name": "To hour",
+        "label": "Hour",
+        "tooltip": "Select hour",
+        "group": "2023edad9ad0b4ec",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "wrap": true,
+        "passthru": true,
+        "topic": "toHour",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "3eab1337fac8bcb0"
+            ]
+        ]
+    },
+    {
+        "id": "b33ed692838a9d31",
+        "type": "inject",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Init timeStamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 260,
+        "wires": [
+            [
+                "090043a6297e108a",
+                "a23692dd6644937a"
+            ]
+        ]
+    },
+    {
+        "id": "090043a6297e108a",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Get current hour",
+        "func": "const hr = new Date(msg.payload).getHours();\nreturn {\n    payload: hr,\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "d45bf7af44b088dd",
+                "c9d4426e27a964aa",
+                "c45fefbf43033bdd",
+                "0f662b35531af751"
+            ]
+        ]
+    },
+    {
+        "id": "a23692dd6644937a",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Get current date timestamp at 0",
+        "func": "const d = new Date(Date.now());\nconst dateAtZero = d.getTime() - d.getHours() * 60 * 60 * 1000;\nreturn {\n    payload: dateAtZero,\n};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "c1f6092b9badf98f",
+                "79c5bd1a321679cc",
+                "1f40f5aeaebb9747",
+                "b406fea3f6c40257"
+            ]
+        ]
+    },
+    {
+        "id": "b406fea3f6c40257",
+        "type": "ui_date_picker",
+        "z": "3f46a9b0265bbf5f",
+        "name": "From frequency",
+        "label": "From",
+        "group": "2023edad9ad0b4ec",
+        "order": 17,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "fromDateFreq",
+        "topicType": "str",
+        "className": "",
+        "x": 300,
+        "y": 720,
+        "wires": [
+            [
+                "cd24c097e6dad2c7"
+            ]
+        ]
+    },
+    {
+        "id": "cc44d1a59539b193",
+        "type": "ui_button",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Query for frequency",
+        "group": "2023edad9ad0b4ec",
+        "order": 19,
+        "width": 3,
+        "height": 2,
+        "passthru": false,
+        "label": "Query",
+        "tooltip": "Query",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "queryWeight",
+        "topicType": "str",
+        "x": 160,
+        "y": 900,
+        "wires": [
+            [
+                "cd24c097e6dad2c7"
+            ]
+        ]
+    },
+    {
+        "id": "c45fefbf43033bdd",
+        "type": "ui_numeric",
+        "z": "3f46a9b0265bbf5f",
+        "name": "From hour frequency",
+        "label": "Hour",
+        "tooltip": "Select hour",
+        "group": "2023edad9ad0b4ec",
+        "order": 18,
+        "width": 3,
+        "height": 1,
+        "wrap": true,
+        "passthru": true,
+        "topic": "fromHourFreq",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 240,
+        "y": 780,
+        "wires": [
+            [
+                "cd24c097e6dad2c7"
+            ]
+        ]
+    },
+    {
+        "id": "1f40f5aeaebb9747",
+        "type": "ui_date_picker",
+        "z": "3f46a9b0265bbf5f",
+        "name": "To frequency",
+        "label": "To",
+        "group": "2023edad9ad0b4ec",
+        "order": 22,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "toDateFreq",
+        "topicType": "str",
+        "className": "",
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "cd24c097e6dad2c7"
+            ]
+        ]
+    },
+    {
+        "id": "0f662b35531af751",
+        "type": "ui_numeric",
+        "z": "3f46a9b0265bbf5f",
+        "name": "To hour frequency",
+        "label": "Hour",
+        "tooltip": "Select hour",
+        "group": "2023edad9ad0b4ec",
+        "order": 23,
+        "width": 3,
+        "height": 1,
+        "wrap": true,
+        "passthru": true,
+        "topic": "toHourFreq",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 230,
+        "y": 840,
+        "wires": [
+            [
+                "cd24c097e6dad2c7"
+            ]
+        ]
+    },
+    {
+        "id": "cd24c097e6dad2c7",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Create from and to date",
+        "func": "if (!msg.topic) return;\n\n// Set context\nflow.set(msg.topic, msg.payload);\n\n// If button query is fired, check if all the data exists\nif (msg.topic.startsWith('query')) {\n    // Check validity\n    const [fromDate, fromHour, toDate, toHour] = flow.get(['fromDateFreq', 'fromHourFreq', 'toDateFreq', 'toHourFreq']);\n    // Generate the timestamp\n    const from = fromDate + fromHour * 60 * 60 * 1000;\n    const to = toDate + toHour * 60 * 60 * 1000;\n    node.warn(toDate)\n    node.warn(Date.now());\n    // Can't go backward\n    if (from >= to) return;\n    // Can't predict\n    if (from > Date.now() || to > Date.now()) {\n        return;\n    }\n    \n    // Construct query\n    return { \n        payload: { from, to }\n    };\n}\n\nreturn;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('fromDate', null);\ncontext.set('fromHour', null);\ncontext.set('toDate', null);\ncontext.set('toHour', null);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 880,
+        "wires": [
+            [
+                "39c772aefdce7f08"
+            ]
+        ]
+    },
+    {
+        "id": "7063725fed1df358",
+        "type": "link out",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Send to frequency out",
+        "mode": "link",
+        "links": [
+            "e601268e1ed807d0"
+        ],
+        "x": 305,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e601268e1ed807d0",
+        "type": "link in",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Send to frequency in",
+        "links": [
+            "7063725fed1df358"
+        ],
+        "x": 615,
+        "y": 820,
+        "wires": [
+            [
+                "39c772aefdce7f08"
+            ]
+        ]
+    }
+]
