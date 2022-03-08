@@ -8,7 +8,7 @@ import threading
 # Setup code from tatobari/hx711py
 EMULATE_HX711 = False
 
-referenceUnit = 1
+referenceUnit = 540
 
 if not EMULATE_HX711:
     # import RPi.GPIO as GPIO
@@ -74,6 +74,8 @@ class Hx711Driver:
 
                     self.hx.power_down()
                     self.hx.power_up()
+                    if val < 0:
+                        continue
                     self.val = val
                 time.sleep(0.5)
         except (KeyboardInterrupt, SystemExit) as exc:
