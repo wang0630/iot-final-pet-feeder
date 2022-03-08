@@ -25,7 +25,7 @@ class Hx711Driver:
         self.GP_LOCK = threading.Lock()
 
     def setup_hx711(self):
-        hxx = HX711(5, 6)
+        hxx = HX711(17, 27)
         # I've found out that, for some reason, the order of the bytes is not always the same between versions of python, numpy and the hx711 itself.
         # Still need to figure out why does it change.
         # If you're experiencing super random values, change these values to MSB or LSB until to get more stable values.
