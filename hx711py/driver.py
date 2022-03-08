@@ -5,7 +5,7 @@ import sys
 
 EMULATE_HX711 = False
 
-referenceUnit = 1
+referenceUnit = 92
 
 if not EMULATE_HX711:
     import RPi.GPIO as GPIO
@@ -54,6 +54,7 @@ def setup_hx711():
 def run_hx711():
     hx = setup_hx711()
     val = 0
+    time.sleep(2)
     try:
         for i in range(3):
             # These three lines are usefull to debug wether to use MSB or LSB in the reading formats
