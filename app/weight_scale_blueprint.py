@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, jsonify
 from hx711py.driver import hx
 import datetime
 # import influxdb_client
@@ -12,4 +12,4 @@ def get_weight():
     hx.GP_LOCK.acquire(blocking=True, timeout=2)
     weight = hx.val
     hx.GP_LOCK.release()
-    return f'Weight: {weight}'
+    return jsonify(weight=weight)
