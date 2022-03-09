@@ -23,5 +23,6 @@ def get_weight():
         },
     }
     p = Point.from_dict(d)
+    # Write to influxdb
     client_write_api.write(bucket="final", record=p)
     return jsonify(weight=weight)

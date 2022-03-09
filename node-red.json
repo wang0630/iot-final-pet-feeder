@@ -2,7 +2,7 @@
     {
         "id": "57f99f135c421ab9",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Camera related flow",
         "disabled": false,
         "info": "",
         "env": []
@@ -10,7 +10,7 @@
     {
         "id": "3f46a9b0265bbf5f",
         "type": "tab",
-        "label": "Flow 2",
+        "label": "Dashboard flow",
         "disabled": false,
         "info": "",
         "env": []
@@ -1375,22 +1375,93 @@
         "x": 190,
         "y": 400,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67eea9159a245c6a",
+        "type": "debug",
+        "z": "57f99f135c421ab9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e35a5a773a794ac0",
+        "type": "inject",
+        "z": "57f99f135c421ab9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6B4L3N4g49S0EnlsUO0g85BDJCdgz6N3wUg&usqp=CAU",
+        "payloadType": "str",
+        "x": 470,
+        "y": 180,
+        "wires": [
             [
-                "f0d0e2701af57a62"
+                "caa7e6a1130a6c08"
             ]
         ]
     },
     {
-        "id": "f0d0e2701af57a62",
-        "type": "Computer Vision",
+        "id": "45becdae480fe5d0",
+        "type": "http request",
         "z": "57f99f135c421ab9",
-        "d": true,
-        "operation": "description",
-        "name": "",
-        "x": 330,
-        "y": 480,
+        "name": "Cognitive services",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://tcss573finalproject-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/93a14889-e098-45de-8207-2688ef3ae387/classify/iterations/Final%20Model/url",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 510,
+        "y": 300,
         "wires": [
-            []
+            [
+                "67eea9159a245c6a"
+            ]
+        ]
+    },
+    {
+        "id": "caa7e6a1130a6c08",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Set header for cognitive services",
+        "func": "msg.headers = {}\nmsg.headers['Prediction-Key'] = '4d21b8c85226484c9203552aaf44866a',\nmsg.headers['Content-Type'] = 'application/json',\nmsg.payload = {\n    'Url': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6B4L3N4g49S0EnlsUO0g85BDJCdgz6N3wUg&usqp=CAU',\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "45becdae480fe5d0"
+            ]
         ]
     },
     {

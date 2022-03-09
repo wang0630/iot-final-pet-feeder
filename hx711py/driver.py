@@ -3,6 +3,8 @@
 import time
 import sys
 import threading
+from influxdb_client import InfluxDBClient, Point
+from influxdb_client.client.write_api import SYNCHRONOUS
 
 # **************************************************************************
 # Setup code from tatobari/hx711py
@@ -23,6 +25,8 @@ class Hx711Driver:
         self.val = 0
         self.hx = None
         self.GP_LOCK = threading.Lock()
+        self.client = InfluxDBClient(url="http://localhost:8086", token="uw", org="University of Washington")
+        self.client_write_api = self.client.write_api(write_options=SYNCHRONOUS)
 
     def setup_hx711(self):
         hxx = HX711(17, 27)
@@ -76,8 +80,19 @@ class Hx711Driver:
                     if val < 0:
                         continue
                     self.val = val
+                    # Write to influx
+                    # Create influxdb data point
+                    d = {
+                        "measurement": "pet_feeder",
+                        "fields": {
+                            "weight": val
+                        },
+                    }
+                    p = Point.from_dict(d)
+                    # Write to influxdb
+                    self.client_write_api.write(bucket="final", record=p)
                     print(val)
-                time.sleep(0.5)
+                time.sleep(5)
         except (KeyboardInterrupt, SystemExit) as exc:
             self.cleanAndExit()
             raise exc
