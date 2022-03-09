@@ -77,7 +77,7 @@ class Hx711Driver:
 
                     self.hx.power_down()
                     self.hx.power_up()
-                    if val < 0:
+                    if val < 1:
                         continue
                     self.val = val
                     # Write to influx
