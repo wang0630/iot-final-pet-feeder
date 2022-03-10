@@ -20,13 +20,14 @@ def get_weight():
     weight = hx.val
     hx.GP_LOCK.release()
     # Get query string
-    start_time = request.args.get('startTime')
+    start_time = int(request.args.get('startTime'))
     if not start_time:
-        start_time = datetime.datetime.timestamp(datetime.datetime.now())
+        start_time = round(datetime.datetime.timestamp(datetime.datetime.now()))
 
     tables = client_query_api.query(f'from(bucket: "final")\
-        |> range(start:{round(datetime.datetime.timestamp(datetime.datetime.now()))}, stop:now())\
+        |> range(start:{start_time}, stop:{start_time + 5000})\
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
+        |> mean()\
     ')
     output = json.dumps(tables, cls=FluxStructureEncoder, indent=2)
     current_app.logger.info(output)
