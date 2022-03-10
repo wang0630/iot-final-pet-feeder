@@ -347,7 +347,12 @@
         "className": ""
     },
     {
-        "id": "123aefc84611ed59",
+        "id": "f5e996e103fb2e89",
+        "type": "board-config",
+        "board": "GrovePi"
+    },
+    {
+        "id": "f455ccdd805805a9",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -357,7 +362,7 @@
         "height": 1
     },
     {
-        "id": "98d2a473c3d093e5",
+        "id": "f0b17f4f0b3635ac",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -367,7 +372,7 @@
         "height": 1
     },
     {
-        "id": "9e54cdb72c39d4e0",
+        "id": "32777baabb65a6bc",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -377,7 +382,7 @@
         "height": 1
     },
     {
-        "id": "cc0169871a37d91e",
+        "id": "a6fde6174d716c19",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -387,7 +392,7 @@
         "height": 1
     },
     {
-        "id": "83dbd89b15f28862",
+        "id": "71265f0f2963092d",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -397,7 +402,7 @@
         "height": 1
     },
     {
-        "id": "6193935b51251173",
+        "id": "1256f3eececed5df",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -407,7 +412,7 @@
         "height": 1
     },
     {
-        "id": "d06d7ef295dafc2c",
+        "id": "b711078a42aa0f1f",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -417,7 +422,7 @@
         "height": 1
     },
     {
-        "id": "f7a3b6d7f3bec39d",
+        "id": "bd1ded86e752dcd7",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -427,7 +432,7 @@
         "height": 1
     },
     {
-        "id": "407d6df59a6b0f7d",
+        "id": "9bed1bd0a4e363d3",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -437,7 +442,7 @@
         "height": 1
     },
     {
-        "id": "f733818f6b807a6f",
+        "id": "5091ee2eab169fad",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -1315,7 +1320,7 @@
         "awb": "auto",
         "name": "Take photo",
         "x": 150,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "017aded9486035a1"
@@ -1327,14 +1332,14 @@
         "type": "function",
         "z": "57f99f135c421ab9",
         "name": "Should a photo be taken?",
-        "func": "// Only take photoes when LED lightness > 100\nif (msg.payload <= 40) return;\n\n// Trigger to take a photo\nreturn msg;\n",
+        "func": "// Only take photoes when an item is detected\nif (msg.payload > 50) return;\n\nconst startingTime = flow.get('startingTime');\n\nif (startingTime && Date.now() - startingTime < 10 * 60 * 1000) return;\n\nflow.set('startingTime', Date.now());\n// Trigger to take a photo\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('startingTime', null);\n",
         "finalize": "",
         "libs": [],
-        "x": 210,
-        "y": 180,
+        "x": 170,
+        "y": 200,
         "wires": [
             [
                 "fbc9cf74a5b7e195"
@@ -1342,40 +1347,16 @@
         ]
     },
     {
-        "id": "bad078c2c89e480b",
-        "type": "delay",
-        "z": "57f99f135c421ab9",
-        "name": "Rate limit for camera",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "10",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 240,
-        "y": 80,
-        "wires": [
-            [
-                "0d272d9cbd6ee2af"
-            ]
-        ]
-    },
-    {
         "id": "017aded9486035a1",
         "type": "Save Blob",
         "z": "57f99f135c421ab9",
-        "d": true,
-        "name": "Azure Save Blob Storage",
-        "x": 190,
-        "y": 400,
+        "name": "Upload image",
+        "x": 140,
+        "y": 380,
         "wires": [
-            []
+            [
+                "e02ceb806c24f0af"
+            ]
         ]
     },
     {
@@ -1390,12 +1371,112 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 360,
+        "x": 630,
+        "y": 600,
         "wires": []
     },
     {
-        "id": "e35a5a773a794ac0",
+        "id": "45becdae480fe5d0",
+        "type": "http request",
+        "z": "57f99f135c421ab9",
+        "name": "Cognitive services",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://tcss573finalproject-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/93a14889-e098-45de-8207-2688ef3ae387/classify/iterations/Iteration7/url",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "403e5bbb07c0a0ab"
+            ]
+        ]
+    },
+    {
+        "id": "caa7e6a1130a6c08",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Set header for cognitive services",
+        "func": "msg.headers = {}\nmsg.headers['Prediction-Key'] = '4d21b8c85226484c9203552aaf44866a',\nmsg.headers['Content-Type'] = 'application/json',\nmsg.payload = {\n    'Url': 'https://twang31storage.blob.core.windows.net/images/latest-image.jpg',\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "45becdae480fe5d0"
+            ]
+        ]
+    },
+    {
+        "id": "aa52feb550b6e88b",
+        "type": "grove digital sensor",
+        "z": "57f99f135c421ab9",
+        "name": "Ultrasonic",
+        "board": "f5e996e103fb2e89",
+        "sensor": "ultrasonic",
+        "repeat": "1.5",
+        "pin": "5",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "0d272d9cbd6ee2af",
+                "9aa45b15ec067726"
+            ]
+        ]
+    },
+    {
+        "id": "586d14ae3856c7db",
+        "type": "http request",
+        "z": "57f99f135c421ab9",
+        "name": "Query server",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "67eea9159a245c6a"
+            ]
+        ]
+    },
+    {
+        "id": "403e5bbb07c0a0ab",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Parse json request",
+        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "9bdc2f68591eabf0"
+            ]
+        ]
+    },
+    {
+        "id": "9b5cabc6cfa973e1",
         "type": "inject",
         "z": "57f99f135c421ab9",
         "name": "",
@@ -1413,10 +1494,46 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6B4L3N4g49S0EnlsUO0g85BDJCdgz6N3wUg&usqp=CAU",
-        "payloadType": "str",
-        "x": 470,
-        "y": 180,
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 600,
+        "wires": [
+            [
+                "586d14ae3856c7db"
+            ]
+        ]
+    },
+    {
+        "id": "9bdc2f68591eabf0",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Open motor",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e02ceb806c24f0af",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Connecting only",
+        "func": "\nreturn { payload: '' };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 460,
         "wires": [
             [
                 "caa7e6a1130a6c08"
@@ -1424,45 +1541,20 @@
         ]
     },
     {
-        "id": "45becdae480fe5d0",
-        "type": "http request",
+        "id": "9aa45b15ec067726",
+        "type": "debug",
         "z": "57f99f135c421ab9",
-        "name": "Cognitive services",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://tcss573finalproject-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/93a14889-e098-45de-8207-2688ef3ae387/classify/iterations/Final%20Model/url",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 510,
-        "y": 300,
-        "wires": [
-            [
-                "67eea9159a245c6a"
-            ]
-        ]
-    },
-    {
-        "id": "caa7e6a1130a6c08",
-        "type": "function",
-        "z": "57f99f135c421ab9",
-        "name": "Set header for cognitive services",
-        "func": "msg.headers = {}\nmsg.headers['Prediction-Key'] = '4d21b8c85226484c9203552aaf44866a',\nmsg.headers['Content-Type'] = 'application/json',\nmsg.payload = {\n    'Url': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6B4L3N4g49S0EnlsUO0g85BDJCdgz6N3wUg&usqp=CAU',\n\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 240,
-        "wires": [
-            [
-                "45becdae480fe5d0"
-            ]
-        ]
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "302115986449b3a8",
@@ -1494,7 +1586,7 @@
         "type": "function",
         "z": "3f46a9b0265bbf5f",
         "name": "Build template for the latest image",
-        "func": "msg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646357224662&to=1646358124662&panelId=6`;\nreturn msg;\n",
+        "func": "msg.payload = 'http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646462612590&to=1646549012590&panelId=6'\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
