@@ -29,5 +29,5 @@ def get_weight():
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
     ')
     output = json.dumps(tables, cls=FluxStructureEncoder, indent=2)
-    current_app.logger(output)
+    current_app.logger.info(output)
     return output
