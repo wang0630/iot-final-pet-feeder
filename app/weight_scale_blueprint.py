@@ -24,8 +24,8 @@ def get_weight():
     if not start_time:
         start_time = datetime.datetime.timestamp(datetime.datetime.now())
 
-    tables = client_query_api.query('from(bucket: "final")\
-        |> range(start: -1d)\
+    tables = client_query_api.query(f'from(bucket: "final")\
+        |> range(start:{round(datetime.datetime.timestamp(datetime.datetime.now()))}, stop:now())\
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
     ')
     output = json.dumps(tables, cls=FluxStructureEncoder, indent=2)
