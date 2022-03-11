@@ -14,6 +14,14 @@ client_query_api = client.query_api()
 weight_scale_blueprint_instance = Blueprint(name='weight_scale', import_name=__name__, url_prefix='/weight')
 
 
+def calc_mean(table):
+    records = table['records']
+    m = 0
+    for r in records:
+        m += r['values']['_value']
+    return m / len(records)
+
+
 @weight_scale_blueprint_instance.route('/')
 def get_weight():
     hx.GP_LOCK.acquire(blocking=True, timeout=2)
@@ -35,9 +43,12 @@ def get_weight():
     tables_previous = client_query_api.query(f'from(bucket: "final")\
             |> range(start:-1m, stop:now())\
             |> filter(fn: (r) => r._measurement == "pet_feeder")\
-            |> window(every: 30s)\
-            |> mean()\
-        ')
-    output = json.dumps(tables_previous, cls=FluxStructureEncoder, indent=2)
-    current_app.logger.info(output)
-    return output
+            |> window(every: 30s)')
+    tables_previous = json.dumps(tables_previous, cls=FluxStructureEncoder, indent=2)
+    m1 = calc_mean(tables_previous[0])
+    m2 = calc_mean(tables_previous[1])
+    if abs(m1 - m2) <= 200:
+        # write to the database
+        return f'{m1} and {m2}'
+    return f'{m1} and {m2} is larger than 200'
+
