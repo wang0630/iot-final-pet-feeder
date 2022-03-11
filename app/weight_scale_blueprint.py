@@ -35,7 +35,7 @@ def get_weight():
     tables_previous = client_query_api.query(f'from(bucket: "final")\
             |> range(start:-1m, stop:now())\
             |> filter(fn: (r) => r._measurement == "pet_feeder")\
-            |> window(every: 30s\
+            |> window(every: 30s)\
             |> mean()\
         ')
     output = json.dumps(tables_previous, cls=FluxStructureEncoder, indent=2)
