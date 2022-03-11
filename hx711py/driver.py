@@ -102,6 +102,7 @@ class Hx711Driver:
             self.cleanAndExit()
             raise exc
 
+
     def cleanAndExit(self):
         print("Cleaning...")
 

@@ -36,6 +36,8 @@ def get_weight():
         |> range(start:{start_time}, stop:{start_time + 10000})\
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
     ')
+    tables = json.loads(json.dumps(tables, cls=FluxStructureEncoder, indent=2))
+    current_app.logger.info(tables)
     m_origin = calc_mean(tables[0])
 
     # Query the weight of the food for now-1m ~ now-30s and now-30s to now
