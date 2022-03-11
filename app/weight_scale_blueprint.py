@@ -24,11 +24,20 @@ def get_weight():
     if not start_time:
         start_time = round(datetime.datetime.timestamp(datetime.datetime.now()))
 
-    tables = client_query_api.query(f'from(bucket: "final")\
-        |> range(start:{start_time}, stop:{start_time + 5000})\
-        |> filter(fn: (r) => r._measurement == "pet_feeder")\
-        |> mean()\
-    ')
-    output = json.dumps(tables, cls=FluxStructureEncoder, indent=2)
+    # Query the weight of the food at starting time
+    # tables = client_query_api.query(f'from(bucket: "final")\
+    #     |> range(start:{start_time}, stop:{start_time + 5000})\
+    #     |> filter(fn: (r) => r._measurement == "pet_feeder")\
+    # ')
+
+    # Query the weight of the food for now-1m ~ now-30s and now-30s to now
+    # If they are the same, write to the database
+    tables_previous = client_query_api.query(f'from(bucket: "final")\
+            |> range(start:-1m, stop:now())\
+            |> filter(fn: (r) => r._measurement == "pet_feeder")\
+            |> window(every: 30s\
+            |> mean()\
+        ')
+    output = json.dumps(tables_previous, cls=FluxStructureEncoder, indent=2)
     current_app.logger.info(output)
     return output

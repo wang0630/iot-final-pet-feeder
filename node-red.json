@@ -1371,7 +1371,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 590,
         "y": 600,
         "wires": []
     },
@@ -1429,8 +1429,7 @@
         "y": 120,
         "wires": [
             [
-                "0d272d9cbd6ee2af",
-                "9aa45b15ec067726"
+                "0d272d9cbd6ee2af"
             ]
         ]
     },
@@ -1442,13 +1441,13 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "",
+        "url": "http://localhost:5000/weight",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 470,
+        "x": 410,
         "y": 600,
         "wires": [
             [
@@ -1461,10 +1460,10 @@
         "type": "function",
         "z": "57f99f135c421ab9",
         "name": "Parse json request",
-        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n}\nreturn msg;\n",
+        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n    flow.set('currentDog', tagName);\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('currentDog', '');",
         "finalize": "",
         "libs": [],
         "x": 530,
@@ -1496,7 +1495,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 300,
+        "x": 240,
         "y": 600,
         "wires": [
             [
@@ -1539,22 +1538,6 @@
                 "caa7e6a1130a6c08"
             ]
         ]
-    },
-    {
-        "id": "9aa45b15ec067726",
-        "type": "debug",
-        "z": "57f99f135c421ab9",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 350,
-        "y": 120,
-        "wires": []
     },
     {
         "id": "302115986449b3a8",
