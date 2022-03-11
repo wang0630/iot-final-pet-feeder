@@ -1,6 +1,7 @@
 #! /usr/bin/python2
 
 import time
+import datetime
 import sys
 import threading
 from influxdb_client import InfluxDBClient, Point
@@ -56,6 +57,7 @@ class Hx711Driver:
 
     def run_hx711(self):
         try:
+            st = datetime.datetime.now()
             while True:
                 with self.GP_LOCK:
                     # These three lines are usefull to debug wether to use MSB or LSB in the reading formats
@@ -78,6 +80,9 @@ class Hx711Driver:
                     self.hx.power_down()
                     self.hx.power_up()
                     if val < 1:
+                        continue
+                    # Omit data from the first five seconds
+                    if (datetime.datetime.now() - st).total_seconds() < 5:
                         continue
                     self.val = val
                     # Write to influx
