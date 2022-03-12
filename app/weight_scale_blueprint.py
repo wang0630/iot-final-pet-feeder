@@ -55,7 +55,7 @@ def get_weight():
     m1 = calc_mean(tables_previous[0])
     m2 = calc_mean(tables_previous[1])
     # Calculate the difference
-    m_r = m_origin - ((m2 + m2) / 2)
+    m_r = m_origin - ((m1 + m2) / 2)
     if abs(m1 - m2) <= 200:
         # write to the database
         d = {
