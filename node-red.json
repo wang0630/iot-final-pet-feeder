@@ -352,7 +352,7 @@
         "board": "GrovePi"
     },
     {
-        "id": "f455ccdd805805a9",
+        "id": "df472c96cf980766",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
@@ -362,92 +362,102 @@
         "height": 1
     },
     {
-        "id": "f0b17f4f0b3635ac",
+        "id": "95289524fc83f904",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
         "group": "2023edad9ad0b4ec",
         "order": 5,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "32777baabb65a6bc",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 9,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "a6fde6174d716c19",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 10,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "71265f0f2963092d",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 13,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "1256f3eececed5df",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 14,
         "width": 16,
         "height": 1
     },
     {
-        "id": "b711078a42aa0f1f",
+        "id": "ef30ed0ec9064435",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 7,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "ee6b955bf89fb8ad",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "a35f5162a6aacc76",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "c90323114dc1f4fb",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 15,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "62501adfd816bac2",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
         "group": "2023edad9ad0b4ec",
         "order": 16,
-        "width": 3,
+        "width": 16,
         "height": 1
     },
     {
-        "id": "bd1ded86e752dcd7",
+        "id": "7d91955cc401cc0c",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
         "group": "2023edad9ad0b4ec",
-        "order": 20,
+        "order": 18,
         "width": 3,
         "height": 1
     },
     {
-        "id": "9bed1bd0a4e363d3",
+        "id": "ace284477e2b1672",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
         "group": "2023edad9ad0b4ec",
-        "order": 21,
+        "order": 22,
         "width": 3,
         "height": 1
     },
     {
-        "id": "5091ee2eab169fad",
+        "id": "db0864926f91547f",
         "type": "ui_spacer",
         "z": "3f46a9b0265bbf5f",
         "name": "spacer",
         "group": "2023edad9ad0b4ec",
-        "order": 24,
+        "order": 23,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "18edc4836d119692",
+        "type": "ui_spacer",
+        "z": "3f46a9b0265bbf5f",
+        "name": "spacer",
+        "group": "2023edad9ad0b4ec",
+        "order": 26,
         "width": 3,
         "height": 1
     },
@@ -1360,22 +1370,6 @@
         ]
     },
     {
-        "id": "67eea9159a245c6a",
-        "type": "debug",
-        "z": "57f99f135c421ab9",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "45becdae480fe5d0",
         "type": "http request",
         "z": "57f99f135c421ab9",
@@ -1409,7 +1403,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "45becdae480fe5d0"
@@ -1447,11 +1441,10 @@
         "proxy": "",
         "authType": "",
         "senderr": true,
-        "x": 450,
+        "x": 430,
         "y": 620,
         "wires": [
             [
-                "67eea9159a245c6a",
                 "96b1bec0f2f331f5"
             ]
         ]
@@ -1471,8 +1464,7 @@
         "y": 360,
         "wires": [
             [
-                "9bdc2f68591eabf0",
-                "99d45d899e8eeca8"
+                "9bdc2f68591eabf0"
             ]
         ]
     },
@@ -1592,22 +1584,6 @@
         "wires": []
     },
     {
-        "id": "99d45d899e8eeca8",
-        "type": "debug",
-        "z": "57f99f135c421ab9",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 550,
-        "y": 500,
-        "wires": []
-    },
-    {
         "id": "96b1bec0f2f331f5",
         "type": "function",
         "z": "57f99f135c421ab9",
@@ -1618,8 +1594,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 700,
+        "x": 670,
+        "y": 620,
         "wires": [
             []
         ]
@@ -1714,7 +1690,7 @@
         "z": "3f46a9b0265bbf5f",
         "group": "2023edad9ad0b4ec",
         "name": "Weight",
-        "order": 4,
+        "order": 6,
         "width": 0,
         "height": 0,
         "format": "<html>\n<iframe id=\"weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
@@ -1754,7 +1730,7 @@
         "z": "3f46a9b0265bbf5f",
         "group": "2023edad9ad0b4ec",
         "name": "Frequency",
-        "order": 15,
+        "order": 17,
         "width": 0,
         "height": 0,
         "format": "<html>\n<iframe id=\"fre\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('fre');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
@@ -1776,7 +1752,7 @@
         "name": "From",
         "label": "From",
         "group": "2023edad9ad0b4ec",
-        "order": 6,
+        "order": 8,
         "width": 4,
         "height": 1,
         "passthru": true,
@@ -1797,7 +1773,7 @@
         "z": "3f46a9b0265bbf5f",
         "name": "Query for weight",
         "group": "2023edad9ad0b4ec",
-        "order": 8,
+        "order": 10,
         "width": 3,
         "height": 2,
         "passthru": false,
@@ -1827,7 +1803,7 @@
         "label": "Hour",
         "tooltip": "Select hour",
         "group": "2023edad9ad0b4ec",
-        "order": 7,
+        "order": 9,
         "width": 3,
         "height": 1,
         "wrap": true,
@@ -1886,7 +1862,7 @@
         "name": "To",
         "label": "To",
         "group": "2023edad9ad0b4ec",
-        "order": 11,
+        "order": 13,
         "width": 4,
         "height": 1,
         "passthru": true,
@@ -1909,7 +1885,7 @@
         "label": "Hour",
         "tooltip": "Select hour",
         "group": "2023edad9ad0b4ec",
-        "order": 12,
+        "order": 14,
         "width": 3,
         "height": 1,
         "wrap": true,
@@ -2010,7 +1986,7 @@
         "name": "From frequency",
         "label": "From",
         "group": "2023edad9ad0b4ec",
-        "order": 17,
+        "order": 19,
         "width": 4,
         "height": 1,
         "passthru": true,
@@ -2031,7 +2007,7 @@
         "z": "3f46a9b0265bbf5f",
         "name": "Query for frequency",
         "group": "2023edad9ad0b4ec",
-        "order": 19,
+        "order": 21,
         "width": 3,
         "height": 2,
         "passthru": false,
@@ -2061,7 +2037,7 @@
         "label": "Hour",
         "tooltip": "Select hour",
         "group": "2023edad9ad0b4ec",
-        "order": 18,
+        "order": 20,
         "width": 3,
         "height": 1,
         "wrap": true,
@@ -2088,7 +2064,7 @@
         "name": "To frequency",
         "label": "To",
         "group": "2023edad9ad0b4ec",
-        "order": 22,
+        "order": 24,
         "width": 4,
         "height": 1,
         "passthru": true,
@@ -2111,7 +2087,7 @@
         "label": "Hour",
         "tooltip": "Select hour",
         "group": "2023edad9ad0b4ec",
-        "order": 23,
+        "order": 25,
         "width": 3,
         "height": 1,
         "wrap": true,
@@ -2157,6 +2133,7 @@
         "name": "Send to frequency out",
         "mode": "link",
         "links": [
+            "a46d593e1c8074b2",
             "e601268e1ed807d0"
         ],
         "x": 305,
@@ -2167,7 +2144,7 @@
         "id": "e601268e1ed807d0",
         "type": "link in",
         "z": "3f46a9b0265bbf5f",
-        "name": "Send to frequency in",
+        "name": "Frequency input",
         "links": [
             "7063725fed1df358"
         ],
@@ -2176,6 +2153,62 @@
         "wires": [
             [
                 "39c772aefdce7f08"
+            ]
+        ]
+    },
+    {
+        "id": "fc4ab8334b82f79f",
+        "type": "function",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Build template for total weight",
+        "func": "msg.payload = 'http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646978494098&to=1647064894098&panelId=8';\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 980,
+        "wires": [
+            [
+                "fd6ad9a9e95da5be"
+            ]
+        ]
+    },
+    {
+        "id": "fd6ad9a9e95da5be",
+        "type": "ui_template",
+        "z": "3f46a9b0265bbf5f",
+        "group": "2023edad9ad0b4ec",
+        "name": "Total weight",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<iframe id=\"total-weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('total-weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a46d593e1c8074b2",
+        "type": "link in",
+        "z": "3f46a9b0265bbf5f",
+        "name": "Total weight input",
+        "links": [
+            "7063725fed1df358"
+        ],
+        "x": 135,
+        "y": 960,
+        "wires": [
+            [
+                "fc4ab8334b82f79f"
             ]
         ]
     }
