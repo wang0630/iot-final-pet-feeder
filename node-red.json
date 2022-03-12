@@ -1332,10 +1332,10 @@
         "type": "function",
         "z": "57f99f135c421ab9",
         "name": "Should a photo be taken?",
-        "func": "// Only take photoes when an item is detected\nif (msg.payload > 50) return;\n\nconst startingTime = flow.get('startingTime');\n\nif (startingTime && Date.now() - startingTime < 10 * 60 * 1000) return;\n\nflow.set('startingTime', Date.now());\n// Trigger to take a photo\nreturn msg;\n",
+        "func": "// Only take photoes when an item is detected\nif (msg.payload > 50) return;\n\nconst startingTime = flow.get('startingTime');\n\nif (startingTime && Date.now() - startingTime < 10 * 60 * 1000) return;\n\n// Trigger to take a photo\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('startingTime', null);\n",
+        "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 170,
@@ -1371,7 +1371,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
+        "x": 630,
         "y": 600,
         "wires": []
     },
@@ -1441,17 +1441,18 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "http://localhost:5000/weight",
+        "url": "http://localhost:5000/weight?startTime={{{startTime}}}&name={{{name}}}",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
-        "senderr": false,
-        "x": 410,
-        "y": 600,
+        "senderr": true,
+        "x": 450,
+        "y": 620,
         "wires": [
             [
-                "67eea9159a245c6a"
+                "67eea9159a245c6a",
+                "96b1bec0f2f331f5"
             ]
         ]
     },
@@ -1459,18 +1460,19 @@
         "id": "403e5bbb07c0a0ab",
         "type": "function",
         "z": "57f99f135c421ab9",
-        "name": "Parse json request",
-        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n    flow.set('currentDog', tagName);\n}\nreturn msg;\n",
+        "name": "Parse json request and set flow",
+        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n    // if (tagName != 'Others') {\n        flow.set('currentDog', tagName);\n        flow.set('startingTime', Date.now());\n    // }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('currentDog', '');",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('currentDog', '');\nflow.set('startingTime', null);\n",
         "finalize": "",
         "libs": [],
-        "x": 530,
+        "x": 570,
         "y": 360,
         "wires": [
             [
-                "9bdc2f68591eabf0"
+                "9bdc2f68591eabf0",
+                "99d45d899e8eeca8"
             ]
         ]
     },
@@ -1478,7 +1480,7 @@
         "id": "9b5cabc6cfa973e1",
         "type": "inject",
         "z": "57f99f135c421ab9",
-        "name": "",
+        "name": "Inject every 2 second",
         "props": [
             {
                 "p": "payload"
@@ -1488,18 +1490,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "2",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 600,
+        "x": 150,
+        "y": 540,
         "wires": [
             [
-                "586d14ae3856c7db"
+                "e436405baf61b1d7"
             ]
         ]
     },
@@ -1537,6 +1539,89 @@
             [
                 "caa7e6a1130a6c08"
             ]
+        ]
+    },
+    {
+        "id": "e436405baf61b1d7",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Create payload for querying the server",
+        "func": "const name = flow.get('currentDog');\nconst startingTime = flow.get('startingTime');\n\n\n// There is no dog or no startingTime\nif (!name || !startingTime) return;\n// Wait 30 seconds for dog to eat\nif (Date.now() - startingTime < 30 * 1000) return;\n\nmsg.startTime = Math.round(startingTime / 1000);\nmsg.name = name;\nnode.warn(startingTime)\nnode.warn(name)\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 620,
+        "wires": [
+            [
+                "586d14ae3856c7db"
+            ]
+        ]
+    },
+    {
+        "id": "cfe75c92fae68aa9",
+        "type": "catch",
+        "z": "57f99f135c421ab9",
+        "name": "Catch 4xx request",
+        "scope": null,
+        "uncaught": false,
+        "x": 210,
+        "y": 760,
+        "wires": [
+            [
+                "e584ce1598bba4ac"
+            ]
+        ]
+    },
+    {
+        "id": "e584ce1598bba4ac",
+        "type": "debug",
+        "z": "57f99f135c421ab9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "99d45d899e8eeca8",
+        "type": "debug",
+        "z": "57f99f135c421ab9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "96b1bec0f2f331f5",
+        "type": "function",
+        "z": "57f99f135c421ab9",
+        "name": "Reset flow context based on response",
+        "func": "const { isFinished, m_r } = msg.payload;\n\nif (!isFinished) return;\n\n// Reset name tag\nflow.set('currentDog', '');\n// Reset startTime\nflow.set('startingTime', null);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 700,
+        "wires": [
+            []
         ]
     },
     {
