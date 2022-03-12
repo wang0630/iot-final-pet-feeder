@@ -4,7 +4,7 @@ from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 from influxdb_client.client.flux_table import FluxStructureEncoder
 from flask import Blueprint, jsonify, request, current_app
-from werkzeug.exceptions import BadRequest
+from werkzeug.exceptions import BadRequest, NotFound
 
 
 client = InfluxDBClient(url="http://localhost:8086", token="uw", org="University of Washington")
@@ -33,11 +33,14 @@ def get_weight():
         return BadRequest('Name should be provided')
     # Query the weight of the food at starting time
     tables = client_query_api.query(f'from(bucket: "final")\
-        |> range(start:{start_time}, stop:{start_time + 10000})\
+        |> range(start:{start_time}, stop:{start_time + 10})\
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
     ')
     tables = json.loads(json.dumps(tables, cls=FluxStructureEncoder, indent=2))
     current_app.logger.info(tables)
+    if len(tables) == 0:
+        return NotFound('The table is empty')
+
     m_origin = calc_mean(tables[0])
 
     # Query the weight of the food for now-1m ~ now-30s and now-30s to now
