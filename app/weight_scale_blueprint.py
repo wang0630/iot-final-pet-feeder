@@ -33,7 +33,7 @@ def get_weight():
         return BadRequest('Name should be provided')
     # Query the weight of the food at starting time
     tables = client_query_api.query(f'from(bucket: "final")\
-        |> range(start:{start_time}, stop:{start_time + 10})\
+        |> range(start:{start_time - 60}, stop:{start_time})\
         |> filter(fn: (r) => r._measurement == "pet_feeder")\
     ')
     tables = json.loads(json.dumps(tables, cls=FluxStructureEncoder, indent=2))
@@ -54,9 +54,9 @@ def get_weight():
     tables_previous = json.loads(json.dumps(tables_previous, cls=FluxStructureEncoder, indent=2))
     m1 = calc_mean(tables_previous[0])
     m2 = calc_mean(tables_previous[1])
+    # Calculate the difference
+    m_r = m_origin - ((m2 + m2) / 2)
     if abs(m1 - m2) <= 200:
-        # Calculate the difference
-        m_r = m_origin - ((m2 + m2) / 2)
         # write to the database
         d = {
             "measurement": "pet_feeder_tags",
@@ -72,7 +72,13 @@ def get_weight():
         client_write_api.write(bucket="final", record=p)
         return jsonify({
             "isFinished": True,
+            "m_r": m_r,
+            "m_origin": m_origin,
+            "m1+m2": (m1 + m2) / 2
         })
     return jsonify({
             "isFinished": False,
+            "m_r": m_r,
+            "m_origin": m_origin,
+            "m1+m2": (m1 + m2) / 2
         })
