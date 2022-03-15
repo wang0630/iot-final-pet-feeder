@@ -43,7 +43,7 @@ def get_weight():
 
     m_origin = calc_mean(tables[0])
 
-    # Query the weight of the food for now-1m ~ now-30s and now-30s to now
+    # Query the weight of the food for now-2m ~ now-1m and now-1m to now
     # If they are the same, write to the database
     tables_previous = client_query_api.query(f'from(bucket: "final")\
             |> range(start:-2m, stop:now())\
