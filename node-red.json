@@ -1,6 +1,14 @@
 [
     {
-        "id": "57f99f135c421ab9",
+        "id": "8de2e2e629025158",
+        "type": "tab",
+        "label": "final-voiceControl",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c2dbcbd6cb768bd6",
         "type": "tab",
         "label": "Camera related flow",
         "disabled": false,
@@ -8,7 +16,7 @@
         "env": []
     },
     {
-        "id": "3f46a9b0265bbf5f",
+        "id": "f7d4bbc8b00d4f22",
         "type": "tab",
         "label": "Dashboard flow",
         "disabled": false,
@@ -181,73 +189,80 @@
         "color": "#DDAA99"
     },
     {
-        "id": "d56d1dd0e6b3bb36",
+        "id": "9915e41c49bdebe1",
+        "type": "board-config",
+        "board": "GrovePi"
+    },
+    {
+        "id": "64a4b4acb109ccc3",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-custom",
             "lightTheme": {
                 "default": "#0094CE",
-                "baseColor": "#4b2e83",
-                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "baseColor": "#d8be18",
+                "baseFont": "Tahoma,Geneva,sans-serif",
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
-                "name": "Untitled Theme 1",
+                "name": "Orange Warm",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseColor": "#e3a435",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#4b2e83",
+                    "default": "#e3a435",
+                    "value": "#e3a435",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#4b2e83",
-                    "edited": false
+                    "value": "#bd592e",
+                    "edited": true
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
+                    "value": "#303030",
+                    "edited": true
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
+                    "value": "#bababa",
+                    "edited": true
                 },
                 "group-textColor": {
-                    "value": "#6b42bc",
-                    "edited": false
+                    "value": "#e3a435",
+                    "edited": true
                 },
                 "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
+                    "value": "#d6d6d6",
+                    "edited": true
                 },
                 "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
+                    "value": "#6e6e6e",
+                    "edited": true
                 },
                 "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
+                    "value": "#303030",
+                    "edited": true
                 },
                 "widget-backgroundColor": {
-                    "value": "#4b2e83",
+                    "value": "#e3a435",
                     "edited": false
                 },
                 "widget-borderColor": {
                     "value": "#ffffff",
-                    "edited": false
+                    "edited": true
                 },
                 "base-font": {
-                    "value": "Lucida Sans Unicode,Lucida Grande,sans-serif"
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
                 }
             },
             "angularTheme": {
@@ -259,92 +274,160 @@
             }
         },
         "site": {
-            "name": "IOT final pet feeder",
+            "name": "IoT Dashboard",
             "hideToolbar": "false",
-            "allowSwipe": "false",
+            "allowSwipe": "mouse",
             "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
+                "sx": 36,
+                "sy": 36,
+                "gx": 15,
+                "gy": 15,
+                "cx": 9,
+                "cy": 9,
                 "px": 0,
                 "py": 0
             }
         }
     },
     {
-        "id": "279513537bf39877",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "aead4ccfc3cd8762",
-        "order": 5,
-        "width": 16,
-        "height": 1
-    },
-    {
-        "id": "e1e53a4ec960152f",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "aead4ccfc3cd8762",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8f8c4a0dd39a6975",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "aead4ccfc3cd8762",
-        "order": 14,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "dee9d49e494615ee",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "aead4ccfc3cd8762",
-        "order": 31,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "2ff577a1e414b29a",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "aead4ccfc3cd8762",
-        "order": 34,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "62fbef774d5fd75b",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "2023edad9ad0b4ec",
+        "id": "52134ab2cf611eb1",
         "type": "ui_group",
-        "name": "petFeeder",
-        "tab": "62fbef774d5fd75b",
+        "name": "Living Room Temperature",
+        "tab": "",
+        "order": 7,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "6793bb011337fba9",
+        "type": "ui_group",
+        "name": "Dining Room Temperature",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "9db6b1546a1f08f0",
+        "type": "ui_group",
+        "name": "Living Room Humidity",
+        "tab": "",
+        "order": 8,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "b71c85efd23c5cde",
+        "type": "ui_group",
+        "name": "Dining Room Humidity",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "8fca10e91babb0ab",
+        "type": "ui_group",
+        "name": "Bedroom Humidity",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "b2609561c5c77581",
+        "type": "ui_group",
+        "name": "Dining Room Light",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "aa6b8de5cf4cf77a",
+        "type": "ui_group",
+        "name": "Bedroom Light",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "6709cd66680fc906",
+        "type": "ui_group",
+        "name": "Living Room Light",
+        "tab": "",
+        "order": 9,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "ab0617d30977bd76",
+        "type": "twilio-api",
+        "name": "Maximum Cappacity Reminder",
+        "sid": "ACdabe369a39229830a59b2156b20e7d2e",
+        "from": "+18126253016"
+    },
+    {
+        "id": "26b31aa990304a55",
+        "type": "sqlitedb",
+        "db": "myDB",
+        "mode": "RWC"
+    },
+    {
+        "id": "5e42ba5e1ff9b6d2",
+        "type": "ui_group",
+        "name": "Control Panel",
+        "tab": "be4732d9929884da",
+        "order": 5,
+        "disp": true,
+        "width": "12",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "dcfcca9017f61088",
+        "type": "ui_group",
+        "name": "The Latest Image",
+        "tab": "be4732d9929884da",
         "order": 1,
         "disp": true,
-        "width": 16,
-        "collapse": false,
+        "width": "12",
+        "collapse": true,
         "className": ""
+    },
+    {
+        "id": "ed32595f84061e92",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "openSpace",
+        "name": "influxDB",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
     },
     {
         "id": "f5e996e103fb2e89",
@@ -352,113 +435,252 @@
         "board": "GrovePi"
     },
     {
-        "id": "df472c96cf980766",
+        "id": "33497137103913f9",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 3,
-        "width": 16,
-        "height": 1
-    },
-    {
-        "id": "95289524fc83f904",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
+        "group": "aead4ccfc3cd8762",
         "order": 5,
         "width": 16,
         "height": 1
     },
     {
-        "id": "ef30ed0ec9064435",
+        "id": "743760fc96a086f7",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
+        "group": "aead4ccfc3cd8762",
         "order": 7,
-        "width": 3,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "ee6b955bf89fb8ad",
+        "id": "e09a038b5e0841cd",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 11,
-        "width": 3,
+        "group": "aead4ccfc3cd8762",
+        "order": 14,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "a35f5162a6aacc76",
+        "id": "0dc64c1f37f68c09",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
+        "group": "aead4ccfc3cd8762",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "deb8850feff371ae",
+        "type": "ui_spacer",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "spacer",
+        "group": "aead4ccfc3cd8762",
+        "order": 34,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "43adabed8030a188",
+        "type": "ui_group",
+        "name": "Metrics",
+        "tab": "be4732d9929884da",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "be4732d9929884da",
+        "type": "ui_tab",
+        "name": "Smart IoT Pet Feeder",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "183c9bb16371e1e6",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "dcfcca9017f61088",
+        "order": 2,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "9f0c9714e4586717",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "dcfcca9017f61088",
+        "order": 3,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "9ed658c30b157773",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "dcfcca9017f61088",
+        "order": 5,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "de6536d9a3943795",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "dcfcca9017f61088",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "432ab5b9346f9644",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "43adabed8030a188",
+        "order": 3,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c527835e46cd43b8",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "43adabed8030a188",
+        "order": 10,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c7af8ca3e3b98ee3",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "43adabed8030a188",
         "order": 12,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "c90323114dc1f4fb",
+        "id": "fa2c3579e9d61607",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "c2dbcbd6cb768bd6",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 3,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c54117ebd5400bae",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 5,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "811064ecb36ecffa",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "f03bbcdae6d17ccb",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 8,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "8dae5b3b99235b3e",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 9,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "e21e7d4cae198aca",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 11,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "d858da836dea7ee0",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 12,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "6a06498d3f2fa4d3",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 14,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "41f4cce03645ade9",
+        "type": "ui_spacer",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "spacer",
+        "group": "5e42ba5e1ff9b6d2",
         "order": 15,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "62501adfd816bac2",
+        "id": "8dbf8bbc25c09b12",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "c2dbcbd6cb768bd6",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 16,
-        "width": 16,
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 17,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "7d91955cc401cc0c",
+        "id": "c02ee985d0b8a964",
         "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
+        "z": "c2dbcbd6cb768bd6",
         "name": "spacer",
-        "group": "2023edad9ad0b4ec",
+        "group": "5e42ba5e1ff9b6d2",
         "order": 18,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "ace284477e2b1672",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 22,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "db0864926f91547f",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 23,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "18edc4836d119692",
-        "type": "ui_spacer",
-        "z": "3f46a9b0265bbf5f",
-        "name": "spacer",
-        "group": "2023edad9ad0b4ec",
-        "order": 26,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
@@ -1306,9 +1528,798 @@
         ]
     },
     {
-        "id": "fbc9cf74a5b7e195",
+        "id": "c92aa4c017572e9d",
+        "type": "ui_microphone",
+        "z": "8de2e2e629025158",
+        "name": "voice_input_new",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "maxLength": "10",
+        "maxRecogLength": 5,
+        "timeslice": 0,
+        "press": "click",
+        "mode": "audio",
+        "interimResults": false,
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "78093041b593b5da"
+            ]
+        ]
+    },
+    {
+        "id": "c9794371c396898e",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "prepareToken",
+        "func": "msg.voice = msg.payload; \nmsg.headers = {}; \nmsg.headers['Ocp-Apim-Subscription-Key'] = '06d26a6db0604886a8c2fee524b327d4'; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 580,
+        "wires": [
+            [
+                "0a5005a71be0adae"
+            ]
+        ]
+    },
+    {
+        "id": "0a5005a71be0adae",
+        "type": "http request",
+        "z": "8de2e2e629025158",
+        "name": "issueToken",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://westus.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "aaa09c4c5db16143"
+            ]
+        ]
+    },
+    {
+        "id": "aaa09c4c5db16143",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "setHeaders",
+        "func": "msg.headers = {}; \nmsg.headers['Authorization'] = 'Bearer ' + msg.payload; \nmsg.headers['Transfer-Encoding'] = 'chunked'; \nmsg.headers['Content-Type'] = 'audio/wav; codecs=audio/pcm; samplerate=16000';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 580,
+        "wires": [
+            [
+                "16fb94396315fb68",
+                "7a588486cc6d7570"
+            ]
+        ]
+    },
+    {
+        "id": "16fb94396315fb68",
+        "type": "change",
+        "z": "8de2e2e629025158",
+        "name": "convertSpeechText",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "voice",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 660,
+        "wires": [
+            [
+                "98b014213f1b8654"
+            ]
+        ]
+    },
+    {
+        "id": "7a588486cc6d7570",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "speechToText header",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "98b014213f1b8654",
+        "type": "http request",
+        "z": "8de2e2e629025158",
+        "name": "executeRequest",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://westus.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "a77a09cd8b3b8b3e",
+                "8104b3dc7c2ea16c"
+            ]
+        ]
+    },
+    {
+        "id": "a77a09cd8b3b8b3e",
+        "type": "json",
+        "z": "8de2e2e629025158",
+        "name": "convertJSON",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 1240,
+        "y": 660,
+        "wires": [
+            [
+                "289a15a5feae7d94"
+            ]
+        ]
+    },
+    {
+        "id": "289a15a5feae7d94",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "extractText",
+        "func": "var vmsg = msg.payload;\nmsg.vmsg = vmsg;\nvar extractedText = vmsg['DisplayText'].toString().toLowerCase().replace(/\\./g, '').replace(/\\,/g, '');\nmsg.extractedText = extractedText;\nvar res = extractedText.split(\" \");\nif (res.includes(\"lucy\")){\n    msg.payload = extractedText;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 660,
+        "wires": [
+            [
+                "5e697cb590ef22b7",
+                "0c99c5a465243120"
+            ]
+        ]
+    },
+    {
+        "id": "8104b3dc7c2ea16c",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "token",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "0c99c5a465243120",
+        "type": "ui_text",
+        "z": "8de2e2e629025158",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 7,
+        "width": 12,
+        "height": 2,
+        "name": "voiceControlCommand",
+        "label": "Command",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1640,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5e697cb590ef22b7",
+        "type": "switch",
+        "z": "8de2e2e629025158",
+        "name": "dispatchVoiceCommand",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": ".*(how).*(much)",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": ".*(how).*(many)",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": ".*(feed)",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": ".*(turn).*(on)",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1610,
+        "y": 440,
+        "wires": [
+            [],
+            [],
+            [
+                "c8f7a803a9e364fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9e0bbe59fc17cb0b",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "prepareToken",
+        "func": "msg.headers = {}; \nmsg.headers['Ocp-Apim-Subscription-Key'] = '06d26a6db0604886a8c2fee524b327d4'; \nmsg.topic = 'text';\nif (!msg.notRead){\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "ba8322b71c2f50c0"
+            ]
+        ]
+    },
+    {
+        "id": "ba8322b71c2f50c0",
+        "type": "http request",
+        "z": "8de2e2e629025158",
+        "name": "issueToken",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://westus.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "b8242021d0f86e03",
+                "d9f825ab56c101c3"
+            ]
+        ]
+    },
+    {
+        "id": "b8242021d0f86e03",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "token",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "d9f825ab56c101c3",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "setHeaders",
+        "func": "msg.headers = {}; \nmsg.headers['Authorization'] = 'Bearer ' + msg.payload; \nmsg.headers['X-Microsoft-OutputFormat'] = 'audio-24khz-96kbitrate-mono-mp3 '; \nmsg.headers['Content-Type'] = 'application/ssml+xml';\nmsg.headers['User-Agent'] = 'iotkkit';\nmsg.payload = `<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\">\n    <voice name=\"en-US-JennyNeural\">`\n       + msg.text +\n    `</voice>\n</speak>`;\nmsg.headers[\"Content-Length\"] = msg.payload.length;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 360,
+        "wires": [
+            [
+                "abe0c924cc2998c3",
+                "fa6135600b2640f9"
+            ]
+        ]
+    },
+    {
+        "id": "abe0c924cc2998c3",
+        "type": "http request",
+        "z": "8de2e2e629025158",
+        "name": "executeRequest",
+        "method": "POST",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://westus.tts.speech.microsoft.com/cognitiveservices/v1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "1b5fdddadb25e874",
+                "6e8b26cc132f4107",
+                "1c7b7b01379f7aec"
+            ]
+        ]
+    },
+    {
+        "id": "fa6135600b2640f9",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "text input",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1b5fdddadb25e874",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "tts",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6e8b26cc132f4107",
+        "type": "play audio",
+        "z": "8de2e2e629025158",
+        "name": "",
+        "voice": "2",
+        "x": 990,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "45fa95e5d4fe1f84",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "henryIsFed",
+        "func": "msg.text = 'food is ready for ' + msg.name;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2130,
+        "y": 500,
+        "wires": [
+            [
+                "9e0bbe59fc17cb0b"
+            ]
+        ]
+    },
+    {
+        "id": "d7ec19c49fa5ae9f",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "feed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2110,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1c7b7b01379f7aec",
+        "type": "ui_text",
+        "z": "8de2e2e629025158",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 10,
+        "width": 12,
+        "height": 2,
+        "name": "voiceResponseCommand",
+        "label": "Response",
+        "format": "{{msg.vmsg.text}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1030,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c8f7a803a9e364fc",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "dispatchName",
+        "func": "var res = msg.payload.split(\" \");\nif (res.includes(\"henry\")){\n    msg.name = 'henry';\n}\nelse{\n    msg.name = 'momo';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 540,
+        "wires": [
+            [
+                "d7ec19c49fa5ae9f",
+                "45fa95e5d4fe1f84"
+            ]
+        ]
+    },
+    {
+        "id": "f5402b19afcee90f",
+        "type": "ui_template",
+        "z": "8de2e2e629025158",
+        "group": "dcfcca9017f61088",
+        "name": "chart",
+        "order": 4,
+        "width": 12,
+        "height": 9,
+        "format": "<html>\n    <head>\n        <script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script>\n        <style>\n            /*#piechart_3d {\n        --nr-dashboard-widgetBackgroundColor:#ffffff!important;\n        --nr-dashboard-widgetColor:#ffffff!important;\n    }\n    .nr-dashboard-theme .nr-dashboard-template path {\n        background-color: #ffffff;\n        fill:#ffffff!important;\n     \n    }*/\n\n            :root {\n                --nr-dashboard-widgetBackgroundColor: unset;\n                --nr-dashboard-widgetBorderColor: unset;\n                --nr-dashboard-widgetColor: unset;\n                --nr-dashboard-widgetBgndColor: unset;\n            }\n            .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-thumb {\n                background-color: unset;\n            }\n        </style>\n        <script type=\"text/javascript\">\n            (function (scope) {\n                scope.$watch(\"msg\", function (msg) {\n                    if (msg) {\n                        google.charts.load(\"current\", { packages: [\"corechart\"] });\n                        google.charts.setOnLoadCallback(drawChart);\n                        function drawChart() {\n                            var data = google.visualization.arrayToDataTable([\n                                [\"Pet\", \"Portion\"],\n                                [\"1\", 1],\n                                [\"2\", 1],\n                                [\"3\", 1],\n                                [\"4\", 1],\n                                [\"5\", 1],\n                                [\"6\", 1],\n                                [\"7\", 1],\n                                [\"8\", 1],\n                            ]);\n\n                            var options = {\n                                title: \"Feeder Status\",\n                                is3D: true,\n                                //   backgroundColor: {\n                                //       fill: 'white'\n                                //   },\n                                slices: msg.payload.colors,\n                            };\n\n                            var chart = new google.visualization.PieChart(document.getElementById(\"piechart_3d\"));\n                            chart.draw(data, options);\n                        }\n                    }\n                });\n            })(scope);\n        </script>\n    </head>\n    \n    <body>\n        <div id=\"piechart_3d\" ng-bind-html=\"msg.payload\" style=\"width: 500px; height: 400px;\"></div>\n    </body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2270,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "913d2950f462f4fb",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "motorControl",
+        "func": "var dog = msg.payload;\nconst henry = context.get(\"henry\");\nconst momo = context.get(\"momo\");\nvar colors = context.get(\"colors\");\n//const portion_map = {0: 'eaten', 1: 'momo', 2:'henry', 3:'momo', 4:'henry', 5:'momo', 6:'henry', 7:'momo'}\nvar curr = context.get(\"curr\");\nvar target = 0;\nif (dog == \"henry\"){\n    target = henry.shift();\n    context.set(\"henry\", henry);\n}else {\n    target = momo.shift();\n    context.set(\"momo\", momo);\n}\ncolors[target].color = \"white\";\nmsg.degree = Math.min(target * 25, 100);\ncontext.set('curr', target);\ncontext.set('colors', colors);\nmsg.payload = {colors}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"henry\", [1, 3, 5, 7]);\ncontext.set(\"momo\", [2, 4, 6]);\ncontext.set('colors', {0:{color:\"white\"}, 1:{color:\"yellow\"}, 2:{color:\"red\"},3:{color:'yellow'}, 4:{color:\"red\"},5:{color:\"yellow\"}, 6:{color:\"red\"}, 7:{color:\"yellow\"}});",
+        "finalize": "",
+        "libs": [],
+        "x": 1850,
+        "y": 860,
+        "wires": [
+            [
+                "c2df719c17e5c525",
+                "c8d8eb44be6a8892",
+                "04c9c35c320930ed"
+            ]
+        ]
+    },
+    {
+        "id": "039816a1f466f337",
+        "type": "inject",
+        "z": "8de2e2e629025158",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "henry",
+        "payloadType": "str",
+        "x": 1570,
+        "y": 860,
+        "wires": [
+            [
+                "913d2950f462f4fb"
+            ]
+        ]
+    },
+    {
+        "id": "c2df719c17e5c525",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "feeder",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2050,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "660de8074992f894",
+        "type": "link in",
+        "z": "8de2e2e629025158",
+        "name": "to voice control",
+        "links": [
+            "52986f8d7e4310c6"
+        ],
+        "x": 145,
+        "y": 520,
+        "wires": [
+            [
+                "78093041b593b5da"
+            ]
+        ]
+    },
+    {
+        "id": "78093041b593b5da",
+        "type": "function",
+        "z": "8de2e2e629025158",
+        "name": "enable voice control",
+        "func": "if(msg.topic == 'mode') {\n    context.set('auto', msg.payload);\n} else {\n    if (!context.get('auto')) {\n        return msg;\n    }\n    \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('auto', true);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "c9794371c396898e",
+                "88695b65e42ba7ad"
+            ]
+        ]
+    },
+    {
+        "id": "c8d8eb44be6a8892",
+        "type": "ui_template",
+        "z": "8de2e2e629025158",
+        "group": "8fca10e91babb0ab",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 2060,
+        "y": 800,
+        "wires": [
+            [
+                "f5402b19afcee90f"
+            ]
+        ]
+    },
+    {
+        "id": "88695b65e42ba7ad",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "enable vocie control",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6a23188148a81160",
+        "type": "pi-gpiod out",
+        "z": "8de2e2e629025158",
+        "name": "servo",
+        "host": "localhost",
+        "port": 8888,
+        "pin": "18",
+        "set": "",
+        "level": "0",
+        "out": "ser",
+        "sermin": "500",
+        "sermax": "2500",
+        "freq": "800",
+        "x": 2270,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "add1bca5d1965d90",
+        "type": "inject",
+        "z": "8de2e2e629025158",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 2050,
+        "y": 960,
+        "wires": [
+            [
+                "6a23188148a81160"
+            ]
+        ]
+    },
+    {
+        "id": "04c9c35c320930ed",
+        "type": "change",
+        "z": "8de2e2e629025158",
+        "name": "set angle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "degree",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2060,
+        "y": 860,
+        "wires": [
+            [
+                "6a23188148a81160"
+            ]
+        ]
+    },
+    {
+        "id": "6c2b9e1b056e51e6",
+        "type": "inject",
+        "z": "8de2e2e629025158",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "momo",
+        "payloadType": "str",
+        "x": 1570,
+        "y": 900,
+        "wires": [
+            [
+                "913d2950f462f4fb"
+            ]
+        ]
+    },
+    {
+        "id": "d9992d448184860f",
+        "type": "link in",
+        "z": "8de2e2e629025158",
+        "name": "to motor",
+        "links": [
+            "8586131e98480573"
+        ],
+        "x": 1505,
+        "y": 760,
+        "wires": [
+            [
+                "913d2950f462f4fb",
+                "c5ab1012b5f6712c"
+            ]
+        ]
+    },
+    {
+        "id": "c5ab1012b5f6712c",
+        "type": "debug",
+        "z": "8de2e2e629025158",
+        "name": "image input ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3c3f87374ac35257",
         "type": "camerapi-takephoto",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "filemode": "1",
         "filename": "lastest-image.jpg",
         "filedefpath": "0",
@@ -1329,50 +2340,52 @@
         "led": "1",
         "awb": "auto",
         "name": "Take photo",
-        "x": 150,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "7b8b1c00f76ccee3",
+                "53021e3700a0b8a1"
+            ]
+        ]
+    },
+    {
+        "id": "6d2afb829976f982",
+        "type": "function",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "Should a photo be taken?",
+        "func": "// Only take photoes when an item is detected\nif (msg.payload > 150) {\n    context.set('feeding', false);\n    return;\n}\n\n\nif(context.get('feeding')) return;\nconst startingTime = flow.get('startingTime');\ncontext.set('feeding', true);\nif (startingTime && Date.now() - startingTime < 10 * 60 * 1000) return;\n\n// Trigger to take a photo\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('feeding', false)",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
         "y": 280,
         "wires": [
             [
-                "017aded9486035a1"
+                "3c3f87374ac35257"
             ]
         ]
     },
     {
-        "id": "0d272d9cbd6ee2af",
-        "type": "function",
-        "z": "57f99f135c421ab9",
-        "name": "Should a photo be taken?",
-        "func": "// Only take photoes when an item is detected\nif (msg.payload > 50) return;\n\nconst startingTime = flow.get('startingTime');\n\nif (startingTime && Date.now() - startingTime < 10 * 60 * 1000) return;\n\n// Trigger to take a photo\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 170,
-        "y": 200,
-        "wires": [
-            [
-                "fbc9cf74a5b7e195"
-            ]
-        ]
-    },
-    {
-        "id": "017aded9486035a1",
+        "id": "7b8b1c00f76ccee3",
         "type": "Save Blob",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Upload image",
-        "x": 140,
-        "y": 380,
+        "x": 320,
+        "y": 460,
         "wires": [
             [
-                "e02ceb806c24f0af"
+                "faff9e3861f37506",
+                "611ea5f57cbb42d6"
             ]
         ]
     },
     {
-        "id": "45becdae480fe5d0",
+        "id": "2727a309be9bd11c",
         "type": "http request",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Cognitive services",
         "method": "POST",
         "ret": "obj",
@@ -1383,54 +2396,57 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 530,
-        "y": 300,
+        "x": 710,
+        "y": 280,
         "wires": [
             [
-                "403e5bbb07c0a0ab"
+                "366681073f40cc5b",
+                "0ba71cb55624177e"
             ]
         ]
     },
     {
-        "id": "caa7e6a1130a6c08",
+        "id": "d1868ce614c1cfd9",
         "type": "function",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Set header for cognitive services",
-        "func": "msg.headers = {}\nmsg.headers['Prediction-Key'] = '4d21b8c85226484c9203552aaf44866a',\nmsg.headers['Content-Type'] = 'application/json',\nmsg.payload = {\n    'Url': 'https://twang31storage.blob.core.windows.net/images/latest-image.jpg',\n}\nreturn msg;\n",
+        "func": "msg.headers = {}\nmsg.headers['Prediction-Key'] = '4d21b8c85226484c9203552aaf44866a',\nmsg.headers['Content-Type'] = 'application/json',\nmsg.payload = {\n    'Url':  typeof msg.url !== \"undefined\" ? msg.url:'https://twang31storage.blob.core.windows.net/images/latest-image.jpg',\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 220,
+        "x": 750,
+        "y": 240,
         "wires": [
             [
-                "45becdae480fe5d0"
+                "2727a309be9bd11c",
+                "69c3c8bf216fceaf"
             ]
         ]
     },
     {
-        "id": "aa52feb550b6e88b",
+        "id": "4b2b660b07014078",
         "type": "grove digital sensor",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
+        "d": true,
         "name": "Ultrasonic",
         "board": "f5e996e103fb2e89",
         "sensor": "ultrasonic",
         "repeat": "1.5",
-        "pin": "5",
-        "x": 120,
-        "y": 120,
+        "pin": "2",
+        "x": 280,
+        "y": 180,
         "wires": [
             [
-                "0d272d9cbd6ee2af"
+                "7b9406a1188c91be"
             ]
         ]
     },
     {
-        "id": "586d14ae3856c7db",
+        "id": "c36143ddb2caa883",
         "type": "http request",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Query server",
         "method": "GET",
         "ret": "obj",
@@ -1441,37 +2457,41 @@
         "proxy": "",
         "authType": "",
         "senderr": true,
-        "x": 430,
-        "y": 620,
+        "x": 610,
+        "y": 700,
         "wires": [
             [
-                "96b1bec0f2f331f5"
+                "852c85224d955414"
             ]
         ]
     },
     {
-        "id": "403e5bbb07c0a0ab",
+        "id": "366681073f40cc5b",
         "type": "function",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Parse json request and set flow",
-        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    msg = {\n        payload: tagName,\n    }\n    // if (tagName != 'Others') {\n        flow.set('currentDog', tagName);\n        flow.set('startingTime', Date.now());\n    // }\n}\nreturn msg;\n",
+        "func": "const { predictions } = msg.payload;\nif (predictions && predictions.length > 0) {\n    const { tagId, tagName } = predictions[0];\n    node.warn(tagName);\n    msg = {\n        payload: tagName,\n    }\n    if (tagName != 'Others') {\n        flow.set('currentDog', tagName);\n        flow.set('startingTime', Date.now());\n        \n    } else {\n        return;\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('currentDog', '');\nflow.set('startingTime', null);\n",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 360,
+        "x": 750,
+        "y": 460,
         "wires": [
             [
-                "9bdc2f68591eabf0"
+                "d7e106d80d407fa9",
+                "195a2a99d0f16cea",
+                "487bb74aca35a315",
+                "c5cd70e1b60dcd50",
+                "8586131e98480573"
             ]
         ]
     },
     {
-        "id": "9b5cabc6cfa973e1",
+        "id": "80620779f5e025d1",
         "type": "inject",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Inject every 2 second",
         "props": [
             {
@@ -1489,35 +2509,18 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 540,
+        "x": 100,
+        "y": 700,
         "wires": [
             [
-                "e436405baf61b1d7"
+                "d2f4f7dea40abd0b"
             ]
         ]
     },
     {
-        "id": "9bdc2f68591eabf0",
+        "id": "faff9e3861f37506",
         "type": "function",
-        "z": "57f99f135c421ab9",
-        "name": "Open motor",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e02ceb806c24f0af",
-        "type": "function",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Connecting only",
         "func": "\nreturn { payload: '' };\n",
         "outputs": 1,
@@ -1525,68 +2528,68 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
-        "y": 460,
+        "x": 320,
+        "y": 520,
         "wires": [
             [
-                "caa7e6a1130a6c08"
+                "d1868ce614c1cfd9"
             ]
         ]
     },
     {
-        "id": "e436405baf61b1d7",
+        "id": "d2f4f7dea40abd0b",
         "type": "function",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Create payload for querying the server",
-        "func": "const name = flow.get('currentDog');\nconst startingTime = flow.get('startingTime');\n\n\n// There is no dog or no startingTime\nif (!name || !startingTime) return;\n// Wait 30 seconds for dog to eat\nif (Date.now() - startingTime < 30 * 1000) return;\n\nmsg.startTime = Math.round(startingTime / 1000);\nmsg.name = name;\nnode.warn(startingTime)\nnode.warn(name)\n\nreturn msg;\n",
+        "func": "const name = flow.get('currentDog');\nconst startingTime = flow.get('startingTime');\n\n\n// There is no dog or no startingTime\nif (!name || !startingTime) return;\n// Wait 30 seconds for dog to eat\nif (Date.now() - startingTime < 30 * 1000) return;\n\nmsg.startTime = Math.round(startingTime / 1000);\nmsg.name = name;\n//node.warn(startingTime)\n//node.warn(name)\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 190,
-        "y": 620,
+        "x": 370,
+        "y": 700,
         "wires": [
             [
-                "586d14ae3856c7db"
+                "c36143ddb2caa883"
             ]
         ]
     },
     {
-        "id": "cfe75c92fae68aa9",
+        "id": "713d4df4e24111cd",
         "type": "catch",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Catch 4xx request",
         "scope": null,
         "uncaught": false,
-        "x": 210,
-        "y": 760,
+        "x": 90,
+        "y": 820,
         "wires": [
             [
-                "e584ce1598bba4ac"
+                "db8abaf4fb99d6b1"
             ]
         ]
     },
     {
-        "id": "e584ce1598bba4ac",
+        "id": "db8abaf4fb99d6b1",
         "type": "debug",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 760,
+        "x": 310,
+        "y": 820,
         "wires": []
     },
     {
-        "id": "96b1bec0f2f331f5",
+        "id": "852c85224d955414",
         "type": "function",
-        "z": "57f99f135c421ab9",
+        "z": "c2dbcbd6cb768bd6",
         "name": "Reset flow context based on response",
         "func": "const { isFinished, m_r } = msg.payload;\n\nif (!isFinished) return;\n\n// Reset name tag\nflow.set('currentDog', '');\n// Reset startTime\nflow.set('startingTime', null);\nreturn msg;\n",
         "outputs": 1,
@@ -1594,186 +2597,600 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 620,
+        "x": 850,
+        "y": 700,
         "wires": [
             []
         ]
     },
     {
-        "id": "302115986449b3a8",
+        "id": "611ea5f57cbb42d6",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "upload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0f97875444825fb6",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "distance",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "53021e3700a0b8a1",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "d7e106d80d407fa9",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "detection",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f3db3dc1f5f027f5",
+        "type": "grove lcdrgb output",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "LCD",
+        "board": "9915e41c49bdebe1",
+        "pin": "2",
+        "x": 1530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b4846b67496af098",
+        "type": "function",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "LCD display",
+        "func": "if (msg.topic === 'display'){\n    if (msg.payload === true){\n        context.set(\"ON\", true);\n        context.set('text', 'Welcome furry friend!');\n    }\n    else{\n        context.set(\"ON\", false);\n    }\n}\n\nif (msg.topic === 'color'){\n    context.set('color', msg.payload);\n}\nif (msg.topic === 'text'){\n    context.set('text', msg.text);\n}\nconst color = context.get('color');\nnode.log(JSON.stringify(color))\nconst text = context.get('text');\nif (context.get('ON')){\n    msg.payload = {text: text, rgb: [color.r, color.g, color.b]};\n}\nelse{\n    msg.payload = {text: 'LCD OFF', rgb: [0, 0, 0]};\n}\nmsg.text = msg.payload.text;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"color\", {r:0, g:0, b:0});\ncontext.set(\"text\", \"LCD OFF\");\ncontext.set(\"ON\", false);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 100,
+        "wires": [
+            [
+                "f3db3dc1f5f027f5"
+            ]
+        ]
+    },
+    {
+        "id": "c0cc513df8019635",
+        "type": "ui_colour_picker",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "",
+        "label": "LCD Display Color",
+        "group": "5e42ba5e1ff9b6d2",
+        "format": "rgb",
+        "outformat": "object",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": true,
+        "showAlpha": true,
+        "showLightness": false,
+        "square": "true",
+        "dynOutput": "false",
+        "order": 16,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "topic": "color",
+        "topicType": "str",
+        "className": "",
+        "x": 1150,
+        "y": 140,
+        "wires": [
+            [
+                "b4846b67496af098"
+            ]
+        ]
+    },
+    {
+        "id": "195a2a99d0f16cea",
+        "type": "ui_text",
+        "z": "c2dbcbd6cb768bd6",
+        "group": "dcfcca9017f61088",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "name": "",
+        "label": "Last Eat",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e5f38e2438f86387",
+        "type": "ui_toast",
+        "z": "c2dbcbd6cb768bd6",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Who has eaten?",
+        "name": "",
+        "x": 1450,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64443ec40db739e3",
+        "type": "twilio out",
+        "z": "c2dbcbd6cb768bd6",
+        "twilio": "ab0617d30977bd76",
+        "twilioType": "sms",
+        "url": "",
+        "number": "14252838503",
+        "name": "Zhifei",
+        "x": 1430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "fe146ea0e07ef9c0",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "twillio",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "487bb74aca35a315",
+        "type": "function",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "message format",
+        "func": "var pet = msg.payload;\nvar end = ''\nvar res = ''\nif (pet == 'Others') return;\nres = `${pet} just had his meal !`;\n\nmsg.payload = res;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"temperature\", );\ncontext.set(\"text\", \" \");",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 540,
+        "wires": [
+            [
+                "64443ec40db739e3",
+                "fe146ea0e07ef9c0",
+                "e5f38e2438f86387"
+            ]
+        ],
+        "info": "format message to send into twillio node"
+    },
+    {
+        "id": "b286cc642ad14879",
+        "type": "ui_switch",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "LCDdisplaySwitch",
+        "label": "LCD Display",
+        "tooltip": "",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 19,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "display",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1150,
+        "y": 100,
+        "wires": [
+            [
+                "b4846b67496af098"
+            ]
+        ]
+    },
+    {
+        "id": "c5cd70e1b60dcd50",
+        "type": "function",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "text",
+        "func": "msg.text = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 320,
+        "wires": [
+            [
+                "b4846b67496af098"
+            ]
+        ]
+    },
+    {
+        "id": "7ffadd31eaf074aa",
+        "type": "link in",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "to auto mode",
+        "links": [
+            "e1fc7f3e75a99e2f"
+        ],
+        "x": 225,
+        "y": 60,
+        "wires": [
+            [
+                "7b9406a1188c91be"
+            ]
+        ]
+    },
+    {
+        "id": "7b9406a1188c91be",
+        "type": "function",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "enable auto mode",
+        "func": "if(msg.topic == 'mode') {\n    context.set('auto', msg.payload);\n} else {\n    if (context.get('auto')) {\n        return msg;\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('auto', true);",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "0f97875444825fb6",
+                "6d2afb829976f982"
+            ]
+        ]
+    },
+    {
+        "id": "057746a95474a25b",
+        "type": "inject",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "henry",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "url",
+                "v": "https://tcss573dogsstroage.blob.core.windows.net/dogs/IMG_0578.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 570,
+        "y": 600,
+        "wires": [
+            [
+                "d1868ce614c1cfd9"
+            ]
+        ]
+    },
+    {
+        "id": "cd312b39138889de",
+        "type": "inject",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "momo",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "url",
+                "v": "https://tcss573dogsstroage.blob.core.windows.net/dogs/IMG_0580.jpg",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 570,
+        "y": 640,
+        "wires": [
+            [
+                "d1868ce614c1cfd9"
+            ]
+        ]
+    },
+    {
+        "id": "8586131e98480573",
+        "type": "link out",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "d9992d448184860f"
+        ],
+        "x": 1095,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "0ba71cb55624177e",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "69c3c8bf216fceaf",
+        "type": "debug",
+        "z": "c2dbcbd6cb768bd6",
+        "name": "request",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e21cdd68695b086f",
         "type": "ui_template",
-        "z": "3f46a9b0265bbf5f",
-        "group": "2023edad9ad0b4ec",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "43adabed8030a188",
         "name": "Page Got Loaded",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": 12,
+        "height": 1,
         "format": "<script>\n(function() {\n    (function(scope) {\n        scope.send({payload: \"loading\"}); // this gets sent when the view is opened in the browser\n    })(scope);\n})();\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 110,
-        "y": 200,
+        "x": 310,
+        "y": 160,
         "wires": [
             [
-                "67131bae92eb4f91",
-                "bed837a1ccdfc2c9",
-                "7063725fed1df358"
+                "10d815510c6616ef",
+                "bba65e496c687897",
+                "6b33b6e1bb5e4146"
             ]
         ]
     },
     {
-        "id": "67131bae92eb4f91",
+        "id": "10d815510c6616ef",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Build template for the latest image",
-        "func": "msg.payload = 'http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646462612590&to=1646549012590&panelId=6'\nreturn msg;\n",
+        "func": "msg.payload = 'https://192.168.50.87:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&panelId=6';\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 680,
         "y": 200,
         "wires": [
             [
-                "467443b34c1293da"
+                "7d723f35f1626e29",
+                "e19c27bf02d24059"
             ]
         ]
     },
     {
-        "id": "bed837a1ccdfc2c9",
+        "id": "bba65e496c687897",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Build template for weight",
-        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=4`;\nreturn msg;\n",
+        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `https://192.168.50.87:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=4`;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
+        "x": 910,
         "y": 360,
         "wires": [
             [
-                "f5a79e975b627dc3"
+                "dcdc95fda9979544"
             ]
         ]
     },
     {
-        "id": "467443b34c1293da",
+        "id": "e19c27bf02d24059",
         "type": "ui_template",
-        "z": "3f46a9b0265bbf5f",
-        "group": "2023edad9ad0b4ec",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "dcfcca9017f61088",
         "name": " The latest image",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "format": "<html>\n<iframe id=\"live-image\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('live-image');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "order": 7,
+        "width": 12,
+        "height": 11,
+        "format": "<html>\n<iframe id=\"live-image\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n<script>\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            console.log(\"msg is \", msg);\n            if (msg && msg.payload) {\n                var x = document.getElementById('live-image');\n                x.setAttribute('src', msg.payload); \n            }\n\n        });\n})(scope);\n</script>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 800,
+        "x": 1170,
         "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "f5a79e975b627dc3",
+        "id": "dcdc95fda9979544",
         "type": "ui_template",
-        "z": "3f46a9b0265bbf5f",
-        "group": "2023edad9ad0b4ec",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "43adabed8030a188",
         "name": "Weight",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "format": "<html>\n<iframe id=\"weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "order": 4,
+        "width": 12,
+        "height": 6,
+        "format": "<html>\n<iframe id=\"weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            if(msg){\n                var x = document.getElementById('weight');\n                x.setAttribute('src', msg.payload); \n            }\n\n        });\n})(scope);\n</script>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1050,
+        "x": 1130,
         "y": 360,
         "wires": [
             []
         ]
     },
     {
-        "id": "39c772aefdce7f08",
+        "id": "e02e5df647b807f4",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Build template for frequency",
-        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=2`;\nreturn msg;\n",
+        "func": "let { from, to }  = msg.payload\nif (!from || !to) {\n    from = 'now-1d';\n    to = 'now';\n}\n\nmsg.payload = `https://192.168.50.87:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=${from}&to=${to}&panelId=2`;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
+        "x": 860,
         "y": 880,
         "wires": [
             [
-                "620361907f476cba"
+                "0c50a31a61c203d7"
             ]
         ]
     },
     {
-        "id": "620361907f476cba",
+        "id": "0c50a31a61c203d7",
         "type": "ui_template",
-        "z": "3f46a9b0265bbf5f",
-        "group": "2023edad9ad0b4ec",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "43adabed8030a188",
         "name": "Frequency",
-        "order": 17,
-        "width": 0,
-        "height": 0,
-        "format": "<html>\n<iframe id=\"fre\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('fre');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "order": 11,
+        "width": 12,
+        "height": 5,
+        "format": "<html>\n<iframe id=\"fre\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            if (msg) {\n                 var x = document.getElementById('fre');\n                x.setAttribute('src', msg.payload);\n            }\n            \n        });\n})(scope);\n</script>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 990,
+        "x": 1130,
         "y": 880,
         "wires": [
             []
         ]
     },
     {
-        "id": "c1f6092b9badf98f",
+        "id": "5af5dee7fe34ace7",
         "type": "ui_date_picker",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "From",
         "label": "From",
-        "group": "2023edad9ad0b4ec",
-        "order": 8,
-        "width": 4,
+        "group": "43adabed8030a188",
+        "order": 5,
+        "width": 5,
         "height": 1,
         "passthru": true,
         "topic": "fromDate",
         "topicType": "str",
         "className": "",
-        "x": 610,
+        "x": 650,
         "y": 400,
         "wires": [
             [
-                "3eab1337fac8bcb0"
+                "be8c1b5ac195b5c5"
             ]
         ]
     },
     {
-        "id": "2b6bb24b92fc7378",
+        "id": "c28833a172efa4a6",
         "type": "ui_button",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Query for weight",
-        "group": "2023edad9ad0b4ec",
-        "order": 10,
+        "group": "43adabed8030a188",
+        "order": 7,
         "width": 3,
         "height": 2,
         "passthru": false,
@@ -1787,24 +3204,24 @@
         "payloadType": "str",
         "topic": "queryWeight",
         "topicType": "str",
-        "x": 570,
-        "y": 600,
+        "x": 680,
+        "y": 560,
         "wires": [
             [
-                "3eab1337fac8bcb0"
+                "be8c1b5ac195b5c5"
             ]
         ]
     },
     {
-        "id": "d45bf7af44b088dd",
+        "id": "cbf64b3d6facae50",
         "type": "ui_numeric",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "From hour",
         "label": "Hour",
         "tooltip": "Select hour",
-        "group": "2023edad9ad0b4ec",
-        "order": 9,
-        "width": 3,
+        "group": "43adabed8030a188",
+        "order": 6,
+        "width": 4,
         "height": 1,
         "wrap": true,
         "passthru": true,
@@ -1815,18 +3232,18 @@
         "max": "24",
         "step": 1,
         "className": "",
-        "x": 530,
-        "y": 500,
+        "x": 670,
+        "y": 480,
         "wires": [
             [
-                "3eab1337fac8bcb0"
+                "be8c1b5ac195b5c5"
             ]
         ]
     },
     {
-        "id": "3eab1337fac8bcb0",
+        "id": "be8c1b5ac195b5c5",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Create from and to date",
         "func": "if (!msg.topic) return;\n\n// Set context\nflow.set(msg.topic, msg.payload);\n\n// If button query is fired, check if all the data exists\nif (msg.topic.startsWith('query')) {\n    // Check validity\n    const [fromDate, fromHour, toDate, toHour] = flow.get(['fromDate', 'fromHour', 'toDate', 'toHour']);\n    // Generate the timestamp\n    const from = fromDate + fromHour * 60 * 60 * 1000;\n    const to = toDate + toHour * 60 * 60 * 1000;\n    node.warn(toDate)\n    node.warn(Date.now());\n    // Can't go backward\n    if (from >= to) return;\n    // Can't predict\n    if (from > Date.now() || to > Date.now()) {\n        node.warn('hereeeee')\n        return;\n    }\n    \n    // Construct query\n    return { \n        payload: { from, to }\n    };\n}\n\nreturn;\n\n",
         "outputs": 1,
@@ -1834,59 +3251,59 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('fromDate', null);\ncontext.set('fromHour', null);\ncontext.set('toDate', null);\ncontext.set('toHour', null);\n",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 600,
+        "x": 930,
+        "y": 560,
         "wires": [
             [
-                "bed837a1ccdfc2c9"
+                "bba65e496c687897"
             ]
         ]
     },
     {
-        "id": "c1df7c02cbd2292a",
+        "id": "50096023692712f5",
         "type": "catch",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Catch time related errors",
         "scope": null,
         "uncaught": false,
-        "x": 190,
+        "x": 110,
         "y": 1040,
         "wires": [
             []
         ]
     },
     {
-        "id": "79c5bd1a321679cc",
+        "id": "5227c9929a85ba41",
         "type": "ui_date_picker",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "To",
         "label": "To",
-        "group": "2023edad9ad0b4ec",
-        "order": 13,
-        "width": 4,
+        "group": "43adabed8030a188",
+        "order": 8,
+        "width": 5,
         "height": 1,
         "passthru": true,
         "topic": "toDate",
         "topicType": "str",
         "className": "",
-        "x": 570,
+        "x": 650,
         "y": 440,
         "wires": [
             [
-                "3eab1337fac8bcb0"
+                "be8c1b5ac195b5c5"
             ]
         ]
     },
     {
-        "id": "c9d4426e27a964aa",
+        "id": "ae200a5708d29042",
         "type": "ui_numeric",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "To hour",
         "label": "Hour",
         "tooltip": "Select hour",
-        "group": "2023edad9ad0b4ec",
-        "order": 14,
-        "width": 3,
+        "group": "43adabed8030a188",
+        "order": 9,
+        "width": 4,
         "height": 1,
         "wrap": true,
         "passthru": true,
@@ -1897,18 +3314,18 @@
         "max": "24",
         "step": 1,
         "className": "",
-        "x": 540,
-        "y": 560,
+        "x": 660,
+        "y": 520,
         "wires": [
             [
-                "3eab1337fac8bcb0"
+                "be8c1b5ac195b5c5"
             ]
         ]
     },
     {
-        "id": "b33ed692838a9d31",
+        "id": "8185a0f97ff6f495",
         "type": "inject",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Init timeStamp",
         "props": [
             {
@@ -1926,19 +3343,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 80,
+        "x": 180,
         "y": 260,
         "wires": [
             [
-                "090043a6297e108a",
-                "a23692dd6644937a"
+                "fd5df72a0274f173",
+                "a6f8799b7a485bb8"
             ]
         ]
     },
     {
-        "id": "090043a6297e108a",
+        "id": "fd5df72a0274f173",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Get current hour",
         "func": "const hr = new Date(msg.payload).getHours();\nreturn {\n    payload: hr,\n};\n",
         "outputs": 1,
@@ -1946,21 +3363,21 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 120,
+        "x": 200,
         "y": 380,
         "wires": [
             [
-                "d45bf7af44b088dd",
-                "c9d4426e27a964aa",
-                "c45fefbf43033bdd",
-                "0f662b35531af751"
+                "cbf64b3d6facae50",
+                "ae200a5708d29042",
+                "db7e549492ff23c9",
+                "76fd6083a01c4b10"
             ]
         ]
     },
     {
-        "id": "a23692dd6644937a",
+        "id": "a6f8799b7a485bb8",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Get current date timestamp at 0",
         "func": "const d = new Date(Date.now());\nconst dateAtZero = d.getTime() - d.getHours() * 60 * 60 * 1000;\nreturn {\n    payload: dateAtZero,\n};\n",
         "outputs": 1,
@@ -1968,46 +3385,46 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 410,
         "y": 340,
         "wires": [
             [
-                "c1f6092b9badf98f",
-                "79c5bd1a321679cc",
-                "1f40f5aeaebb9747",
-                "b406fea3f6c40257"
+                "5af5dee7fe34ace7",
+                "5227c9929a85ba41",
+                "b0b4c5e93f9db04c",
+                "ad6e1854f26077d5"
             ]
         ]
     },
     {
-        "id": "b406fea3f6c40257",
+        "id": "ad6e1854f26077d5",
         "type": "ui_date_picker",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "From frequency",
         "label": "From",
-        "group": "2023edad9ad0b4ec",
-        "order": 19,
-        "width": 4,
+        "group": "43adabed8030a188",
+        "order": 16,
+        "width": 5,
         "height": 1,
         "passthru": true,
         "topic": "fromDateFreq",
         "topicType": "str",
         "className": "",
         "x": 300,
-        "y": 720,
+        "y": 740,
         "wires": [
             [
-                "cd24c097e6dad2c7"
+                "9f3fc3236c07b856"
             ]
         ]
     },
     {
-        "id": "cc44d1a59539b193",
+        "id": "54dc1d6f0c64e6a4",
         "type": "ui_button",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Query for frequency",
-        "group": "2023edad9ad0b4ec",
-        "order": 21,
+        "group": "43adabed8030a188",
+        "order": 15,
         "width": 3,
         "height": 2,
         "passthru": false,
@@ -2021,24 +3438,24 @@
         "payloadType": "str",
         "topic": "queryWeight",
         "topicType": "str",
-        "x": 160,
-        "y": 900,
+        "x": 300,
+        "y": 880,
         "wires": [
             [
-                "cd24c097e6dad2c7"
+                "9f3fc3236c07b856"
             ]
         ]
     },
     {
-        "id": "c45fefbf43033bdd",
+        "id": "db7e549492ff23c9",
         "type": "ui_numeric",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "From hour frequency",
         "label": "Hour",
         "tooltip": "Select hour",
-        "group": "2023edad9ad0b4ec",
-        "order": 20,
-        "width": 3,
+        "group": "43adabed8030a188",
+        "order": 17,
+        "width": 4,
         "height": 1,
         "wrap": true,
         "passthru": true,
@@ -2049,46 +3466,46 @@
         "max": "24",
         "step": 1,
         "className": "",
-        "x": 240,
+        "x": 320,
         "y": 780,
         "wires": [
             [
-                "cd24c097e6dad2c7"
+                "9f3fc3236c07b856"
             ]
         ]
     },
     {
-        "id": "1f40f5aeaebb9747",
+        "id": "b0b4c5e93f9db04c",
         "type": "ui_date_picker",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "To frequency",
         "label": "To",
-        "group": "2023edad9ad0b4ec",
-        "order": 24,
-        "width": 4,
+        "group": "43adabed8030a188",
+        "order": 13,
+        "width": 5,
         "height": 1,
         "passthru": true,
         "topic": "toDateFreq",
         "topicType": "str",
         "className": "",
-        "x": 310,
-        "y": 660,
+        "x": 290,
+        "y": 700,
         "wires": [
             [
-                "cd24c097e6dad2c7"
+                "9f3fc3236c07b856"
             ]
         ]
     },
     {
-        "id": "0f662b35531af751",
+        "id": "76fd6083a01c4b10",
         "type": "ui_numeric",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "To hour frequency",
         "label": "Hour",
         "tooltip": "Select hour",
-        "group": "2023edad9ad0b4ec",
-        "order": 25,
-        "width": 3,
+        "group": "43adabed8030a188",
+        "order": 14,
+        "width": 4,
         "height": 1,
         "wrap": true,
         "passthru": true,
@@ -2099,18 +3516,18 @@
         "max": "24",
         "step": 1,
         "className": "",
-        "x": 230,
+        "x": 310,
         "y": 840,
         "wires": [
             [
-                "cd24c097e6dad2c7"
+                "9f3fc3236c07b856"
             ]
         ]
     },
     {
-        "id": "cd24c097e6dad2c7",
+        "id": "9f3fc3236c07b856",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Create from and to date",
         "func": "if (!msg.topic) return;\n\n// Set context\nflow.set(msg.topic, msg.payload);\n\n// If button query is fired, check if all the data exists\nif (msg.topic.startsWith('query')) {\n    // Check validity\n    const [fromDate, fromHour, toDate, toHour] = flow.get(['fromDateFreq', 'fromHourFreq', 'toDateFreq', 'toHourFreq']);\n    // Generate the timestamp\n    const from = fromDate + fromHour * 60 * 60 * 1000;\n    const to = toDate + toHour * 60 * 60 * 1000;\n    node.warn(toDate)\n    node.warn(Date.now());\n    // Can't go backward\n    if (from >= to) return;\n    // Can't predict\n    if (from > Date.now() || to > Date.now()) {\n        return;\n    }\n    \n    // Construct query\n    return { \n        payload: { from, to }\n    };\n}\n\nreturn;\n\n",
         "outputs": 1,
@@ -2118,98 +3535,233 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('fromDate', null);\ncontext.set('fromHour', null);\ncontext.set('toDate', null);\ncontext.set('toHour', null);\n",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 590,
         "y": 880,
         "wires": [
             [
-                "39c772aefdce7f08"
+                "e02e5df647b807f4"
             ]
         ]
     },
     {
-        "id": "7063725fed1df358",
+        "id": "6b33b6e1bb5e4146",
         "type": "link out",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Send to frequency out",
         "mode": "link",
         "links": [
-            "a46d593e1c8074b2",
-            "e601268e1ed807d0"
+            "0b8e42c89b6a6ca3",
+            "3d80c20d076b3469"
         ],
-        "x": 305,
-        "y": 160,
+        "x": 465,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "e601268e1ed807d0",
+        "id": "3d80c20d076b3469",
         "type": "link in",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Frequency input",
         "links": [
-            "7063725fed1df358"
+            "6b33b6e1bb5e4146"
         ],
-        "x": 615,
+        "x": 695,
         "y": 820,
         "wires": [
             [
-                "39c772aefdce7f08"
+                "e02e5df647b807f4"
             ]
         ]
     },
     {
-        "id": "fc4ab8334b82f79f",
+        "id": "0bdf02cc667e0f74",
         "type": "function",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Build template for total weight",
-        "func": "msg.payload = 'http://10.20.8.247:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&from=1646978494098&to=1647064894098&panelId=8';\nreturn msg;\n",
+        "func": "msg.payload = 'https://192.168.50.87:3000/d-solo/u8d3Fsggz/uwt-smart-home?orgId=1&panelId=8';\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 410,
         "y": 980,
         "wires": [
             [
-                "fd6ad9a9e95da5be"
+                "40ce29b949df1ec3"
             ]
         ]
     },
     {
-        "id": "fd6ad9a9e95da5be",
+        "id": "40ce29b949df1ec3",
         "type": "ui_template",
-        "z": "3f46a9b0265bbf5f",
-        "group": "2023edad9ad0b4ec",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "43adabed8030a188",
         "name": "Total weight",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "format": "<html>\n<iframe id=\"total-weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            var x = document.getElementById('total-weight');\n            x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>\n</html>",
+        "order": 2,
+        "width": 12,
+        "height": 6,
+        "format": "<html>\n<iframe id=\"total-weight\" width=\"500px\" height=\"400px\" style = \"overflow:hidden; margin:auto; border:0px solid green;\"></iframe>\n\n<script>\n//NOTE, more then one chart on a page, rename in the second and following \n//templates the \"myframe\" variable so that every template has a unique name.\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n            // new message received\n            if (msg) {\n                var x = document.getElementById('total-weight');\n                x.setAttribute('src', msg.payload); \n            }\n            \n        });\n})(scope);\n</script>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 610,
+        "x": 1130,
         "y": 980,
         "wires": [
             []
         ]
     },
     {
-        "id": "a46d593e1c8074b2",
+        "id": "0b8e42c89b6a6ca3",
         "type": "link in",
-        "z": "3f46a9b0265bbf5f",
+        "z": "f7d4bbc8b00d4f22",
         "name": "Total weight input",
         "links": [
-            "7063725fed1df358"
+            "6b33b6e1bb5e4146"
         ],
-        "x": 135,
-        "y": 960,
+        "x": 215,
+        "y": 980,
         "wires": [
             [
-                "fc4ab8334b82f79f"
+                "0bdf02cc667e0f74"
             ]
+        ]
+    },
+    {
+        "id": "b870c731deabd157",
+        "type": "ui_switch",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "",
+        "label": "Auto Mode",
+        "tooltip": "",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "mode",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "e1fc7f3e75a99e2f",
+                "52986f8d7e4310c6"
+            ]
+        ]
+    },
+    {
+        "id": "52986f8d7e4310c6",
+        "type": "link out",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "660de8074992f894"
+        ],
+        "x": 525,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7d723f35f1626e29",
+        "type": "debug",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "sssss",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4c7a1125b6c265f5",
+        "type": "function",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1fc7f3e75a99e2f",
+        "type": "link out",
+        "z": "f7d4bbc8b00d4f22",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "7ffadd31eaf074aa"
+        ],
+        "x": 525,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "efd39c54cafb5d26",
+        "type": "ui_text",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "5e42ba5e1ff9b6d2",
+        "order": 2,
+        "width": 7,
+        "height": 6,
+        "name": "",
+        "label": "Introduction",
+        "format": "The smart pet feeder provides two modes: auto distribution and voice manual control.The user can visualize the show up time of the pets and portion of the food that each indivisual pet consumed",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ecea0b49b1f02b5a",
+        "type": "ui_media",
+        "z": "f7d4bbc8b00d4f22",
+        "group": "5e42ba5e1ff9b6d2",
+        "name": "photo",
+        "width": 5,
+        "height": 6,
+        "order": 1,
+        "category": "dog",
+        "file": "logo.PNG",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1130,
+        "y": 160,
+        "wires": [
+            []
         ]
     }
 ]
